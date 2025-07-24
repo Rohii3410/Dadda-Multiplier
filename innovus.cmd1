@@ -1,0 +1,146 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Wed Jun 19 15:39:08 2024                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v20.14-s095_1 (64bit) 04/19/2021 14:41 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 20.14-s095_1 NR210411-1939/20_14-UB (database version 18.20.547) {superthreading v2.13}
+#@(#)CDS: AAE 20.14-s018 (64bit) 04/19/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 20.14-s027_1 () Apr 13 2021 21:29:07 ( )
+#@(#)CDS: SYNTECH 20.14-s017_1 () Mar 25 2021 13:07:27 ( )
+#@(#)CDS: CPE v20.14-s080
+#@(#)CDS: IQuantus/TQuantus 20.1.1-s460 (64bit) Fri Mar 5 18:46:16 PST 2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+getVersion
+getVersion
+win
+save_global Default.globals
+set init_gnd_net VSS
+set init_lef_file lef/all.lef
+set init_design_settop 0
+set init_verilog dadda_netlist.v
+set init_mmmc_file mcombi.view
+set init_pwr_net VDD
+init_design
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site tsm3site -r 1 0.6 5 5 5 5
+uiSetTool select
+getIoFlowFlag
+fit
+setIoFlowFlag 0
+floorPlan -site tsm3site -r 0.895297805643 0.599189 5.28 5.04 5.28 5.04
+uiSetTool select
+getIoFlowFlag
+fit
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site tsm3site -r 1 0.6 5 5 5 5
+uiSetTool select
+getIoFlowFlag
+fit
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer Metal6 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {VDD VSS} -type core_rings -follow core -layer {top Metal5 bottom Metal5 left Metal6 right Metal6} -width {top 1 bottom 1 left 1 right 1} -spacing {top 0.5 bottom 0.5 left 0.5 right 0.5} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+getIoFlowFlag
+clearGlobalNets
+globalNetConnect VSS -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VDD -type tiehi -instanceBasename * -hierarchicalInstance {}
+globalNetConnect VSS -type tielo -instanceBasename * -hierarchicalInstance {}
+setSrouteMode -viaConnectToShape { noshape }
+sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { Metal1(1) Metal6(6) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) Metal6(6) } -nets { VDD VSS } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { Metal1(1) Metal6(6) }
+setSrouteMode -viaConnectToShape { noshape }
+sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { Metal1(1) Metal6(6) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) Metal6(6) } -nets { VDD VSS } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { Metal1(1) Metal6(6) }
+setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+setEndCapMode -reset
+setEndCapMode -boundary_tap false
+setNanoRouteMode -quiet -droutePostRouteSpreadWire 1
+setNanoRouteMode -quiet -timingEngine {}
+setUsefulSkewMode -maxSkew false -noBoundary false -useCells {DLY4X1 DLY3X1 DLY2X1 DLY1X1 CLKBUFXL CLKBUFX8 CLKBUFX4 CLKBUFX3 CLKBUFX20 CLKBUFX2 CLKBUFX16 CLKBUFX12 CLKBUFX1 BUFXL BUFX8 BUFX4 BUFX3 BUFX20 BUFX2 BUFX16 BUFX12 BUFX1 INVXL INVX8 INVX4 INVX3 INVX20 INVX2 INVX16 INVX12 INVX1 CLKINVXL CLKINVX8 CLKINVX4 CLKINVX3 CLKINVX20 CLKINVX2 CLKINVX16 CLKINVX12 CLKINVX1} -maxAllowedDelay 1
+setPlaceMode -reset
+setPlaceMode -congEffort auto -timingDriven 1 -clkGateAware 1 -powerDriven 1 -ignoreScan 1 -reorderScan 1 -ignoreSpare 0 -placeIOPins 0 -moduleAwareSpare 0 -preserveRouting 1 -rmAffectedRouting 0 -checkRoute 0 -swapEEQ 0
+setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+setEndCapMode -reset
+setEndCapMode -boundary_tap false
+setUsefulSkewMode -maxSkew false -noBoundary false -useCells {DLY4X1 DLY3X1 DLY2X1 DLY1X1 CLKBUFXL CLKBUFX8 CLKBUFX4 CLKBUFX3 CLKBUFX20 CLKBUFX2 CLKBUFX16 CLKBUFX12 CLKBUFX1 BUFXL BUFX8 BUFX4 BUFX3 BUFX20 BUFX2 BUFX16 BUFX12 BUFX1 INVXL INVX8 INVX4 INVX3 INVX20 INVX2 INVX16 INVX12 INVX1 CLKINVXL CLKINVX8 CLKINVX4 CLKINVX3 CLKINVX20 CLKINVX2 CLKINVX16 CLKINVX12 CLKINVX1} -maxAllowedDelay 1
+setPlaceMode -fp false
+place_design
+setPlaceMode -fp false
+place_design
+getFillerMode -quiet
+addFiller -cell FILL1 FILL16 FILL2 FILL32 FILL4 FILL64 FILL8 -prefix FILLER
+addFiller -cell FILL1 FILL16 FILL2 FILL32 FILL4 FILL64 FILL8 -prefix FILLER
+fit
+zoomBox -56.54800 -12.35200 166.48950 111.57250
+zoomBox -41.66100 -4.78800 147.92100 100.54800
+zoomBox -28.37450 1.89750 132.77050 91.43350
+zoomBox -7.13200 12.49200 109.29600 77.18200
+zoomBox 14.21000 23.13550 85.71150 62.86350
+zoomBox 19.30400 25.67650 80.08100 59.44550
+zoomBox 35.36500 33.68650 62.33300 48.67050
+zoomBox 37.28650 34.64500 60.20950 47.38150
+zoomBox 42.64900 36.31800 54.61600 42.96700
+zoomBox 45.91450 37.33400 51.22550 40.28500
+zoomBox 47.54100 37.84000 49.54500 38.95350
+zoomBox 48.08950 38.01100 48.97900 38.50500
+zoomBox 48.31600 38.21600 48.60200 38.37500
+zoomBox 48.38150 38.27600 48.49150 38.33700
+zoomBox 48.40500 38.29550 48.45350 38.32250
+zoomBox 48.38400 38.28350 48.47750 38.33550
+zoomBox 48.34400 38.26050 48.52400 38.36050
+zoomBox 48.20750 38.18150 48.68750 38.44800
+zoomBox 48.01200 38.07150 48.93150 38.58250
+gui_select -rect {48.39650 38.32150 48.50600 38.22650}
+zoomBox 47.41900 37.75450 49.49150 38.90600
+zoomBox 46.44400 37.23150 50.41550 39.43800
+zoomBox 43.88550 35.85950 52.83850 40.83400
+zoomBox 39.67800 33.61050 56.83000 43.14050
+zoomBox 31.63000 29.35800 64.48950 47.61550
+selectWire 41.1100 38.2200 53.9300 38.5000 3 {a1/c[0]}
+deselectAll
+selectInst a1/r25/g72__7410
+zoomBox 28.58950 28.07500 67.24750 49.55400
+deselectAll
+selectWire 5.2800 34.8800 100.9800 35.6800 1 VDD
+zoomBox 39.91800 32.07000 57.07100 41.60050
+gui_select -rect {49.08750 35.91700 49.12900 36.06150}
+deselectAll
+selectInst a1/r25/g72__7410
+zoomBox 38.01200 31.32550 58.19200 42.53800
+zoomBox 35.76950 30.44950 59.51150 43.64100
+zoomBox 33.13150 29.41900 61.06350 44.93850
+zoomBox 30.02800 28.20650 62.88950 46.46500
+zoomBox 11.08250 20.80600 74.03550 55.78400
+zoomBox 4.08800 18.07350 78.15050 59.22450
+zoomBox -4.14100 14.85900 82.99200 63.27200
+zoomBox -13.82200 11.07750 88.68750 68.03400
+zoomBox -25.21100 6.62800 95.38850 73.63600
+zoomBox -38.61050 1.39350 103.27200 80.22650
+zoomBox -54.37450 -4.76450 112.54650 87.98050
+zoomBox -92.42550 -18.14200 138.60750 110.22500
+zoomBox -116.62300 -26.64900 155.18050 124.37100
+streamOut DADDA_GDS -libName DesignLib -units 2000 -mode ALL
+streamOut DADDA_GDS -libName DesignLib -units 2000 -mode ALL
+checkPlace

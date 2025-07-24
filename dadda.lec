@@ -1,0 +1,211 @@
+//Note: Enable Unified Schematic Viewer usage.
+//Note: Enable buffer/inverter collapsing usage on schematics
+//Note: Enable bus collapsing usage on schematics
+//Note: Enable independent UI styles on each schematics
+//Note: Set schematic traverse max. level to 200 !!!
+//Note: Set schematic traverse max. time to 300(seconds) !!!
+//Note: Enable Schematic concise drawing support
+SETUP> read library ./lib/fast.lib -library
+// Command: read library ./lib/fast.lib -library
+// Error: -library is not a legal option.
+// Error: -library is not a legal option.
+// Error: Read library failed
+SETUP> read library ./lib/fast.lib -liberty -both
+// Command: read library ./lib/fast.lib -liberty -both
+// Parsing file ./lib/fast.lib ...
+// Note: Read Liberty library successfully
+SETUP> read design ./dadda.v -verilog -golden
+// Command: read design ./dadda.v -verilog -golden
+// Parsing file ./dadda.v ...
+// Golden root module is set to 'dadda'
+// Warning: (HRC3.8) Port positional association occurs in an instantiation (occurrence:65)
+// Warning: (HRC3.10a) An input port is declared, but it is not completely used in the module (occurrence:2)
+// Note: Read VERILOG design successfully
+SETUP> read design ./dadda_netlist.v -verilog -revised
+// Command: read design ./dadda_netlist.v -verilog -revised
+// Parsing file ./dadda_netlist.v ...
+// Revised root module is set to 'dadda'
+// Warning: (RTL2.5) Net is referenced without an assignment. Design verification will be based on set_undriven_signal setting (occurrence:2)
+// Warning: (RTL2.13) Undriven pin is detected (occurrence:1)
+// Warning: (RTL14) Signal has input but it has no output (occurrence:12)
+// Warning: (HRC3.8) Port positional association occurs in an instantiation (occurrence:65)
+// Warning: (HRC3.10a) An input port is declared, but it is not completely used in the module (occurrence:2)
+// Warning: There are 1 undriven nets in Revised
+// Warning: There are 1 undriven pins in Revised
+// Note: Read VERILOG design successfully
+SETUP> set system mode lec
+// Command: set system mode lec
+// Processing Golden ...
+// Modeling Golden ...
+// Processing Revised ...
+// Modeling Revised ...
+// (F28) Converted 1 internal output port(s) to inout port(s)
+CPU time     : 1.68    seconds
+Elapse time  : 369     seconds
+Memory usage : 123.40  M bytes
+// Mapping key points ...
+================================================================================
+Mapped points: SYSTEM class
+--------------------------------------------------------------------------------
+Mapped points     PI     PO     DFF       Total   
+--------------------------------------------------------------------------------
+Golden            17     16     16        49      
+--------------------------------------------------------------------------------
+Revised           17     16     16        49      
+================================================================================
+LEC> set system mode setup
+// Command: set system mode setup
+SETUP> set system mode lec
+// Command: set system mode lec
+LEC> add compared points -all
+// Command: add compared points -all
+// 32 compared points added to compare list
+LEC> compare
+// Command: compare
+================================================================================
+Compared points      PO     DFF       Total   
+--------------------------------------------------------------------------------
+Equivalent           16     16        32      
+================================================================================
+LEC> diagnose 49 -golden // gate p_reg[0]
+// Command: diagnose 49 -golden // gate p_reg[0]
+Diagnosis for key points:
+  (G) + 49  DFF  /p_reg[0]
+  (R) + 39  DFF  /p_reg[0]/U$1
+Diagnosis point:
+  (G)   436 AND  /a1/U$36
+  (R)   504 AND  /a1/g386__1617/U$1
+
+There are 2 corresponding supports.
+There is no non-corresponding support in Golden.
+There is no non-corresponding support in Revised.
+
+Corresponding supports:
+(G) + 8    'PI'                /a[0]
+(R) + 8    'PI'                /a[0]
+
+(G) + 16   'PI'                /b[0]
+(R) + 16   'PI'                /b[0]
+
+LEC> report gate 49 -Golden -fanin 1 // Gate:49 (Golden)
+// Command: report gate 49 -Golden -fanin 1 // Gate:49 (Golden)
+================================================================================
+Pin-name  ID (Golden)  Type   Tie   Gate-name
+================================================================================
+          49           DFF          /p_reg[0]
+------ Fanins ------------------------------------------------------------------
+ 1: 'S'   50           ZERO         /N$1
+ 2: 'R'   50           ZERO         /N$1
+ 3: 'CK'  17           PI           /clk
+ 4: 'D'   436          AND          /a1/U$36
+------ Fanouts -----------------------------------------------------------------
+ 1:       33           PO           /p[0]
+================================================================================
+Fanin cone:
+DFF  /p_reg[0] 49
+  ZERO  /N$1 50
+  ZERO  /N$1 50
+  PI  /clk 17
+  AND2  /a1/U$36 436 ...
+LEC> report gate 39 -Revised -fanin 1 // Gate:39 (Revised)
+// Command: report gate 39 -Revised -fanin 1 // Gate:39 (Revised)
+================================================================================
+Pin-name  ID (Revised) Type   Tie   Gate-name (Library: DFFHQX4)
+================================================================================
+          39           DFF          /p_reg[0]/U$1
+------ Fanins ------------------------------------------------------------------
+ 1: 'S'   72           ZERO         /ZERO
+ 2: 'R'   73           ZERO         /ZERO
+ 3: 'CK'  17           PI           /clk
+ 4: 'D'   504          AND          /a1/g386__1617/U$1
+------ Fanouts -----------------------------------------------------------------
+ 1:       887          BUF          /p_reg[0]/U$1/Q
+================================================================================
+Fanin cone:
+DFF  /p_reg[0]/U$1 39
+  ZERO  /ZERO 72
+  ZERO  /ZERO 73
+  PI  /clk 17
+  AND2  /a1/g386__1617/U$1 504 ...
+LEC> report gate 49 -Golden -fanin 1 // Gate:49 (Golden)
+// Command: report gate 49 -Golden -fanin 1 // Gate:49 (Golden)
+================================================================================
+Pin-name  ID (Golden)  Type   Tie   Gate-name
+================================================================================
+          49           DFF          /p_reg[0]
+------ Fanins ------------------------------------------------------------------
+ 1: 'S'   50           ZERO         /N$1
+ 2: 'R'   50           ZERO         /N$1
+ 3: 'CK'  17           PI           /clk
+ 4: 'D'   436          AND          /a1/U$36
+------ Fanouts -----------------------------------------------------------------
+ 1:       33           PO           /p[0]
+================================================================================
+Fanin cone:
+DFF  /p_reg[0] 49
+  ZERO  /N$1 50
+  ZERO  /N$1 50
+  PI  /clk 17
+  AND2  /a1/U$36 436 ...
+LEC> report gate 39 -Revised -fanin 1 // Gate:39 (Revised)
+// Command: report gate 39 -Revised -fanin 1 // Gate:39 (Revised)
+================================================================================
+Pin-name  ID (Revised) Type   Tie   Gate-name (Library: DFFHQX4)
+================================================================================
+          39           DFF          /p_reg[0]/U$1
+------ Fanins ------------------------------------------------------------------
+ 1: 'S'   72           ZERO         /ZERO
+ 2: 'R'   73           ZERO         /ZERO
+ 3: 'CK'  17           PI           /clk
+ 4: 'D'   504          AND          /a1/g386__1617/U$1
+------ Fanouts -----------------------------------------------------------------
+ 1:       887          BUF          /p_reg[0]/U$1/Q
+================================================================================
+Fanin cone:
+DFF  /p_reg[0]/U$1 39
+  ZERO  /ZERO 72
+  ZERO  /ZERO 73
+  PI  /clk 17
+  AND2  /a1/g386__1617/U$1 504 ...
+LEC> report gate 49 -Golden -fanin 1 // Gate:49 (Golden)
+// Command: report gate 49 -Golden -fanin 1 // Gate:49 (Golden)
+================================================================================
+Pin-name  ID (Golden)  Type   Tie   Gate-name
+================================================================================
+          49           DFF          /p_reg[0]
+------ Fanins ------------------------------------------------------------------
+ 1: 'S'   50           ZERO         /N$1
+ 2: 'R'   50           ZERO         /N$1
+ 3: 'CK'  17           PI           /clk
+ 4: 'D'   436          AND          /a1/U$36
+------ Fanouts -----------------------------------------------------------------
+ 1:       33           PO           /p[0]
+================================================================================
+Fanin cone:
+DFF  /p_reg[0] 49
+  ZERO  /N$1 50
+  ZERO  /N$1 50
+  PI  /clk 17
+  AND2  /a1/U$36 436 ...
+LEC> report gate 39 -Revised -fanin 1 // Gate:39 (Revised)
+// Command: report gate 39 -Revised -fanin 1 // Gate:39 (Revised)
+================================================================================
+Pin-name  ID (Revised) Type   Tie   Gate-name (Library: DFFHQX4)
+================================================================================
+          39           DFF          /p_reg[0]/U$1
+------ Fanins ------------------------------------------------------------------
+ 1: 'S'   72           ZERO         /ZERO
+ 2: 'R'   73           ZERO         /ZERO
+ 3: 'CK'  17           PI           /clk
+ 4: 'D'   504          AND          /a1/g386__1617/U$1
+------ Fanouts -----------------------------------------------------------------
+ 1:       887          BUF          /p_reg[0]/U$1/Q
+================================================================================
+Fanin cone:
+DFF  /p_reg[0]/U$1 39
+  ZERO  /ZERO 72
+  ZERO  /ZERO 73
+  PI  /clk 17
+  AND2  /a1/g386__1617/U$1 504 ...
+
+

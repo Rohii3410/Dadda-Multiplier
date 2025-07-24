@@ -1,0 +1,305 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 20.11-s111_1, built Mon Apr 26 02:27:38 PDT 2021
+Options: -files dadda.tcl 
+Date:    Fri Jul 05 13:49:14 2024
+Host:    cadence_51 (x86_64 w/Linux 3.10.0-1160.el7.x86_64) (4cores*8cpus*1physical cpu*Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz 8448KB) (7645524KB)
+PID:     8966
+OS:      Red Hat Enterprise Linux Server release 7.9 (Maipo)
+
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (10 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source dadda.tcl
+#@ Begin verbose source ./dadda.tcl
+@file(dadda.tcl) 1: set_db information_level 9
+  Setting attribute of root '/': 'information_level' = 9
+@file(dadda.tcl) 3: set_db optimize_constant_0_flops true
+  Setting attribute of root '/': 'optimize_constant_0_flops' = true
+@file(dadda.tcl) 5: set_db optimize_constant_1_flop false
+  Setting attribute of root '/': 'optimize_constant_1_flops' = false
+@file(dadda.tcl) 7: set_db delete_unloaded_seqs true
+  Setting attribute of root '/': 'delete_unloaded_seqs' = true
+@file(dadda.tcl) 9: set_db lib_search_path ./lib
+  Setting attribute of root '/': 'lib_search_path' = ./lib
+@file(dadda.tcl) 14: set_db library ./lib/fast.lib
+
+Threads Configured:3
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'library_features' encountered. Ignoring (File /home/citd/Rohith1/dadda/lib/fast.lib, Line 30)
+        : Check to see if this construct is really needed for synthesis. Many liberty constructs are not actually required.
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Y' for the cell 'HOLDX1'. (File /home/citd/Rohith1/dadda/lib/fast.lib, Line 89266)
+Warning : Missing clock pin in the sequential cell. [LBR-525]
+        : Clock pin absent in sequential cell(s) 'RSLATNX1' (File /home/citd/Rohith1/dadda/lib/fast.lib, Line 147265)
+        : Sequential timing checks, such as 'setup_rising' or 'hold_rising', on flop and latch cells require a clock pin. Verify that the 'clock' attribute of the clock pin is set to 'true' or that the clock pin has a 'clocked_on' attribute.
+Warning : Missing clock pin in the sequential cell. [LBR-525]
+        : Clock pin absent in sequential cell(s) 'RSLATNX2' (File /home/citd/Rohith1/dadda/lib/fast.lib, Line 147568)
+Warning : Missing clock pin in the sequential cell. [LBR-525]
+        : Clock pin absent in sequential cell(s) 'RSLATNX4' (File /home/citd/Rohith1/dadda/lib/fast.lib, Line 147871)
+Warning : Missing clock pin in the sequential cell. [LBR-525]
+        : Clock pin absent in sequential cell(s) 'RSLATNXL' (File /home/citd/Rohith1/dadda/lib/fast.lib, Line 148174)
+Warning : Missing clock pin in the sequential cell. [LBR-525]
+        : Clock pin absent in sequential cell(s) 'RSLATX1' (File /home/citd/Rohith1/dadda/lib/fast.lib, Line 148477)
+Warning : Missing clock pin in the sequential cell. [LBR-525]
+        : Clock pin absent in sequential cell(s) 'RSLATX2' (File /home/citd/Rohith1/dadda/lib/fast.lib, Line 148841)
+Warning : Missing clock pin in the sequential cell. [LBR-525]
+        : Clock pin absent in sequential cell(s) 'RSLATX4' (File /home/citd/Rohith1/dadda/lib/fast.lib, Line 149205)
+Warning : Missing clock pin in the sequential cell. [LBR-525]
+        : Clock pin absent in sequential cell(s) 'RSLATXL' (File /home/citd/Rohith1/dadda/lib/fast.lib, Line 149569)
+
+  Message Summary for Library fast.lib:
+  *************************************
+  Missing clock pin in the sequential cell. [LBR-525]: 8
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  An unsupported construct was detected in this library. [LBR-40]: 1
+  *************************************
+ 
+            Reading file '/home/citd/Rohith1/dadda/lib/fast.lib'
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.980000, 0.000000) in library 'fast.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'HOLDX1/Y' has no function.
+        : If the remainder of this library cell's semantic checks are successful, it will be considered as a timing-model (because one of its outputs does not have a valid function.
+  Setting attribute of root '/': 'library' = ./lib/fast.lib
+@file(dadda.tcl) 16: read_hdl ./dadda.v
+            Reading Verilog file './dadda.v'
+initial
+      |
+Warning : Ignoring unsynthesizable construct. [VLOGPT-37]
+        : Initial in file './dadda.v' on line 205, column 7.
+        : For example, the following constructs will be ignored:
+    - initial block
+    - final block
+    - program block
+    - property block
+    - sequence block
+    - covergroup
+    - checker block
+    - gate drive strength
+    - system task enable
+    - reg declaration with initial value
+    - specify block.
+$monitor ("a=%d , b= %d , p=%d",a ,b,p);
+         |
+Warning : Ignoring unsynthesizable construct. [VLOGPT-37]
+        : Call to system task '$monitor' in file './dadda.v' on line 208, column 10.
+initial
+      |
+Warning : Ignoring unsynthesizable construct. [VLOGPT-37]
+        : Initial in file './dadda.v' on line 210, column 7.
+a=$random;
+         |
+Warning : Unsupported system task or function: assuming value 1'b1. [VLOGPT-31]
+        : System function '$random' in file './dadda.v' on line 213, column 10.
+        : The $signed and $unsigned system functions are always supported, and synthesizable SystemVerilog system functions are supported when SystemVerilog parsing is enabled.  No other system functions are supported.
+b=$random;
+         |
+Warning : Unsupported system task or function: assuming value 1'b1. [VLOGPT-31]
+        : System function '$random' in file './dadda.v' on line 214, column 10.
+clk=$random;
+           |
+Warning : Unsupported system task or function: assuming value 1'b1. [VLOGPT-31]
+        : System function '$random' in file './dadda.v' on line 215, column 12.
+#10;
+  |
+Warning : Ignoring unsynthesizable delay specifier (#<n>) mentioned in verilog file. These delay numbers are for simulation purpose only. [VLOGPT-35]
+        : in file './dadda.v' on line 216, column 3.
+        : All delay numbers assigned or used in behavioral code are for simulation purposes only and are not synthesizable. These values are ignored during synthesis. This warning is issued only once per module.
+@file(dadda.tcl) 18: elaborate dadda
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFHX1'.
+        : Setting the 'timing_sense' to non_unate.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFHX1'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDFHX1'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFHX2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFHX2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDFHX2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFHX4'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFHX4'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDFHX4'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFHXL'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFHXL'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDFHXL'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFX1'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFX1'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDFX1'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFX2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFX2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'ADDFX2'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'ADDFX4'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'ADDFX4'.
+Info    : Promoting a hold arc to removal. [LBR-31]
+        : The asynchronous input pin is DFFNRX1/RN
+        : Hold arcs to asynchronous input pins are not supported.
+Info    : Promoting a setup arc to recovery. [LBR-30]
+        : The asynchronous input pin is DFFNRX1/RN
+        : Setup arcs to asynchronous input pins are not supported.
+Info    : Promoting a hold arc to removal. [LBR-31]
+        : The asynchronous input pin is DFFNRX2/RN
+Info    : Promoting a setup arc to recovery. [LBR-30]
+        : The asynchronous input pin is DFFNRX2/RN
+Info    : Promoting a hold arc to removal. [LBR-31]
+        : The asynchronous input pin is DFFNRX4/RN
+Info    : Promoting a setup arc to recovery. [LBR-30]
+        : The asynchronous input pin is DFFNRX4/RN
+Info    : Promoting a hold arc to removal. [LBR-31]
+        : The asynchronous input pin is DFFNRXL/RN
+Info    : Promoting a setup arc to recovery. [LBR-30]
+        : The asynchronous input pin is DFFNRXL/RN
+Info    : Promoting a hold arc to removal. [LBR-31]
+        : The asynchronous input pin is DFFNSRX1/RN
+Info    : Promoting a setup arc to recovery. [LBR-30]
+        : The asynchronous input pin is DFFNSRX1/RN
+Info    : Promoting a hold arc to removal. [LBR-31]
+        : The asynchronous input pin is DFFNSRX1/SN
+Info    : Promoting a setup arc to recovery. [LBR-30]
+        : The asynchronous input pin is DFFNSRX1/SN
+Info    : Promoting a hold arc to removal. [LBR-31]
+        : The asynchronous input pin is DFFNSRX2/RN
+Info    : Promoting a setup arc to recovery. [LBR-30]
+        : The asynchronous input pin is DFFNSRX2/RN
+Info    : Promoting a hold arc to removal. [LBR-31]
+        : The asynchronous input pin is DFFNSRX2/SN
+Info    : Promoting a setup arc to recovery. [LBR-30]
+        : The asynchronous input pin is DFFNSRX2/SN
+Info    : Promoting a hold arc to removal. [LBR-31]
+        : The asynchronous input pin is DFFNSRX4/RN
+Info    : Promoting a setup arc to recovery. [LBR-30]
+        : The asynchronous input pin is DFFNSRX4/RN
+Info    : Promoting a hold arc to removal. [LBR-31]
+        : The asynchronous input pin is DFFNSRX4/SN
+Info    : Promoting a setup arc to recovery. [LBR-30]
+        : The asynchronous input pin is DFFNSRX4/SN
+Info    : Promoting a hold arc to removal. [LBR-31]
+        : The asynchronous input pin is DFFNSRXL/RN
+Info    : Promoting a setup arc to recovery. [LBR-30]
+        : The asynchronous input pin is DFFNSRXL/RN
+Info    : Promoting a hold arc to removal. [LBR-31]
+        : The asynchronous input pin is DFFNSRXL/SN
+Info    : Promoting a setup arc to recovery. [LBR-30]
+        : The asynchronous input pin is DFFNSRXL/SN
+Info    : Promoting a hold arc to removal. [LBR-31]
+        : The asynchronous input pin is DFFNSX1/SN
+Info    : Promoting a setup arc to recovery. [LBR-30]
+        : The asynchronous input pin is DFFNSX1/SN
+Info    : Promoting a hold arc to removal. [LBR-31]
+        : The asynchronous input pin is DFFNSX2/SN
+Info    : Promoting a setup arc to recovery. [LBR-30]
+        : The asynchronous input pin is DFFNSX2/SN
+Info    : Promoting a hold arc to removal. [LBR-31]
+        : The asynchronous input pin is DFFNSX4/SN
+Info    : Promoting a setup arc to recovery. [LBR-30]
+        : The asynchronous input pin is DFFNSX4/SN
+Info    : Promoting a hold arc to removal. [LBR-31]
+        : The asynchronous input pin is DFFNSXL/SN
+Info    : Promoting a setup arc to recovery. [LBR-30]
+        : The asynchronous input pin is DFFNSXL/SN
+Info    : Promoting a hold arc to removal. [LBR-31]
+        : The asynchronous input pin is DFFRHQX1/RN
+Info    : Promoting a setup arc to recovery. [LBR-30]
+        : The asynchronous input pin is DFFRHQX1/RN
+Info    : Promoting a hold arc to removal. [LBR-31]
+        : The asynchronous input pin is DFFRHQX2/RN
+Info    : Promoting a setup arc to recovery. [LBR-30]
+        : The asynchronous input pin is DFFRHQX2/RN
+Info    : Promoting a hold arc to removal. [LBR-31]
+        : The asynchronous input pin is DFFRHQX4/RN
+Info    : Promoting a setup arc to recovery. [LBR-30]
+        : The asynchronous input pin is DFFRHQX4/RN
+Info    : Promoting a hold arc to removal. [LBR-31]
+        : The asynchronous input pin is DFFRHQXL/RN
+Info    : Promoting a setup arc to recovery. [LBR-30]
+        : The asynchronous input pin is DFFRHQXL/RN
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'WB' and 'RB' in libcell 'RF1R1WX2' is 'neg_unate', but unateness determined from function is 'non_unate'.
+        : The 'timing_sense' attribute will be respected.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'WB' and 'R1B' in libcell 'RF2R1WX2' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'WB' and 'R2B' in libcell 'RF2R1WX2' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'D' and 'Q' in libcell 'TTLATX1' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'D' and 'Q' in libcell 'TTLATX2' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'D' and 'Q' in libcell 'TTLATX4' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'D' and 'Q' in libcell 'TTLATXL' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Unusable library cells found at the time of loading a library.  [LBR-415]
+        : Library: 'fast.lib', Total cells: 470, Unusable cells: 20.
+	List of unusable cells: 'HOLDX1 RF1R1WX2 RF2R1WX2 RFRDX1 RFRDX2 RFRDX4 RSLATNX1 RSLATNX2 RSLATNX4 RSLATNXL RSLATX1 RSLATX2 RSLATX4 RSLATXL TIEHI TIELO TTLATX1 TTLATX2 TTLATX4 TTLATXL .'
+        : For  more  information, refer to 'Cells Identified as Unusable' in the 'User Guide'. To know the reason why a cell is considered as unusable, check 'unusable_reason' libcell attribute.
+          INLINE_INFO: Skipping marking small hierarchies inline as the variable 'hdl_dissolve_primitive_instance_hierarchy_threshold' has not been set to a positive value.
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'dadda' from file './dadda.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'right_da' from file './dadda.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'hag' from file './dadda.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'fag' from file './dadda.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'left' from file './dadda.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'rca3bit' from file './dadda.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'bec5bit' from file './dadda.v'.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'dadda'.
+Checking for analog nets...
+Check completed for analog nets.
+Checking for source RTL...
+Check completed for source RTL.
+Running Unified Mux Engine Tricks...
+Completed Unified Mux Engine Tricks
+--------------------------------------------------------
+| Trick             | Accepts | Rejects | Runtime (ms) | 
+--------------------------------------------------------
+| ume_constant_bmux |       0 |       0 |         0.00 | 
+--------------------------------------------------------
+Starting clip mux common data inputs [v1.0] (stage: post_elab, startdef: dadda, recur: true)
+Completed clip mux common data inputs (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting clip the non-user hierarchies [v2.0] (stage: post_elab, startdef: dadda, recur: true)
+Completed clip the non-user hierarchies (accepts: 0, rejects: 0, runtime: 0.000s)
+        Applying wireload models.
+        Computing net loads.
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+@file(dadda.tcl) 20: sey_db lp_multi_vt_optimization_effort high
+#@ End verbose source ./dadda.tcl
+invalid command name "sey_db"
+Encountered problems processing file: dadda.tcl
+WARNING: This version of the tool is 1165 days old.

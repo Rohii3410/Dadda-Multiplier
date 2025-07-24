@@ -1,0 +1,1971 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.14-s095_1, built Mon Apr 19 14:41:42 PDT 2021
+Options:	
+Date:		Wed Jun 19 15:38:38 2024
+Host:		cadence_51 (x86_64 w/Linux 3.10.0-1160.el7.x86_64) (4cores*8cpus*Intel(R) Xeon(R) W-2123 CPU @ 3.60GHz 8448KB)
+OS:		Red Hat Enterprise Linux Server release 7.9 (Maipo)
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (14 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+<CMD> getVersion
+<CMD> getVersion
+[INFO] Loading PVS 20.11 fill procedures
+<CMD> win
+<CMD> save_global Default.globals
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file lef/all.lef
+<CMD> set init_design_settop 0
+<CMD> set init_verilog dadda_netlist.v
+<CMD> set init_mmmc_file mcombi.view
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+#% Begin Load MMMC data ... (date=06/19 15:46:23, mem=658.4M)
+**ERROR: (TCLCMD-994):	Can not find 'analysis view' object with the name 'scan_slow_CMAX'. This can happen when the specified name of any MMMC object is incorrectly spelled or has been removed from the running session.
+**ERROR: (TCLCMD-994):	Can not find 'analysis view' object with the name 'scan_fast_CMAX'. This can happen when the specified name of any MMMC object is incorrectly spelled or has been removed from the running session.
+**ERROR: (TCLCMD-994):	Can not find 'analysis view' object with the name 'scan_slow_RCMAX'. This can happen when the specified name of any MMMC object is incorrectly spelled or has been removed from the running session.
+**ERROR: (TCLCMD-994):	Can not find 'analysis view' object with the name 'scan_fast_RCMAX'. This can happen when the specified name of any MMMC object is incorrectly spelled or has been removed from the running session.
+**ERROR: (TCLCMD-994):	Can not find 'analysis view' object with the name 'scan_slow_RMAX'. This can happen when the specified name of any MMMC object is incorrectly spelled or has been removed from the running session.
+**ERROR: (TCLCMD-994):	Can not find 'analysis view' object with the name 'scan_fast_RMAX'. This can happen when the specified name of any MMMC object is incorrectly spelled or has been removed from the running session.
+**ERROR: (TCLCMD-994):	Can not find 'analysis view' object with the name 'scan_slow_CMIN'. This can happen when the specified name of any MMMC object is incorrectly spelled or has been removed from the running session.
+**ERROR: (TCLCMD-994):	Can not find 'analysis view' object with the name 'scan_fast_CMIN'. This can happen when the specified name of any MMMC object is incorrectly spelled or has been removed from the running session.
+**ERROR: (TCLCMD-994):	Can not find 'analysis view' object with the name 'scan_slow_RCMIN'. This can happen when the specified name of any MMMC object is incorrectly spelled or has been removed from the running session.
+**ERROR: (TCLCMD-994):	Can not find 'analysis view' object with the name 'scan_fast_RCMIN'. This can happen when the specified name of any MMMC object is incorrectly spelled or has been removed from the running session.
+**ERROR: (TCLCMD-994):	Can not find 'analysis view' object with the name 'scan_slow_RMIN'. This can happen when the specified name of any MMMC object is incorrectly spelled or has been removed from the running session.
+**ERROR: (TCLCMD-994):	Can not find 'analysis view' object with the name 'scan_fast_RMIN'. This can happen when the specified name of any MMMC object is incorrectly spelled or has been removed from the running session.
+**ERROR: (TCLCMD-994):	Can not find 'analysis view' object with the name 'test_slow_CMAX'. This can happen when the specified name of any MMMC object is incorrectly spelled or has been removed from the running session.
+**ERROR: (TCLCMD-994):	Can not find 'analysis view' object with the name 'test_fast_CMAX'. This can happen when the specified name of any MMMC object is incorrectly spelled or has been removed from the running session.
+**ERROR: (TCLCMD-994):	Can not find 'analysis view' object with the name 'test_slow_RCMAX'. This can happen when the specified name of any MMMC object is incorrectly spelled or has been removed from the running session.
+**ERROR: (TCLCMD-994):	Can not find 'analysis view' object with the name 'test_fast_RCMAX'. This can happen when the specified name of any MMMC object is incorrectly spelled or has been removed from the running session.
+**ERROR: (TCLCMD-994):	Can not find 'analysis view' object with the name 'test_slow_RMAX'. This can happen when the specified name of any MMMC object is incorrectly spelled or has been removed from the running session.
+**ERROR: (TCLCMD-994):	Can not find 'analysis view' object with the name 'test_fast_RMAX'. This can happen when the specified name of any MMMC object is incorrectly spelled or has been removed from the running session.
+**ERROR: (TCLCMD-994):	Can not find 'analysis view' object with the name 'test_slow_CMIN'. This can happen when the specified name of any MMMC object is incorrectly spelled or has been removed from the running session.
+**ERROR: (TCLCMD-994):	Can not find 'analysis view' object with the name 'test_fast_CMIN'. This can happen when the specified name of any MMMC object is incorrectly spelled or has been removed from the running session.
+#% End Load MMMC data ... (date=06/19 15:46:23, total cpu=0:00:00.0, real=0:00:00.0, peak res=658.9M, current mem=658.9M)
+corner_worst_RMIN corner_worst_CMAX corner_worst_CMIN corner_worst_RCMAX corner_worst_RMAX corner_worst_RCMIN
+
+Loading LEF file lef/all.lef ...
+Set DBUPerIGU to M2 pitch 1320.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q[0]' in macro 'rom_512x16A' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q[10]' in macro 'rom_512x16A' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q[11]' in macro 'rom_512x16A' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q[12]' in macro 'rom_512x16A' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q[13]' in macro 'rom_512x16A' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q[14]' in macro 'rom_512x16A' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q[15]' in macro 'rom_512x16A' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q[1]' in macro 'rom_512x16A' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q[2]' in macro 'rom_512x16A' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q[3]' in macro 'rom_512x16A' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q[4]' in macro 'rom_512x16A' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q[5]' in macro 'rom_512x16A' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q[6]' in macro 'rom_512x16A' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q[7]' in macro 'rom_512x16A' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q[8]' in macro 'rom_512x16A' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q[9]' in macro 'rom_512x16A' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q[0]' in macro 'ram_256x16A' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q[10]' in macro 'ram_256x16A' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q[11]' in macro 'ram_256x16A' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q[12]' in macro 'ram_256x16A' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-201) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'PDB04DGZ' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'OEN' in macro 'PDB04DGZ' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'I' in macro 'PDB04DGZ' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+
+viaInitial starts at Wed Jun 19 15:46:23 2024
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNM1 GENERATE.
+Type 'man IMPPP-557' for more detail.
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNM2 GENERATE.
+Type 'man IMPPP-557' for more detail.
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNM3 GENERATE.
+Type 'man IMPPP-557' for more detail.
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNM4 GENERATE.
+Type 'man IMPPP-557' for more detail.
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNM5 GENERATE.
+Type 'man IMPPP-557' for more detail.
+**WARN: (IMPPP-557):	A single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. Remove this statement from the technology file: VIARULE TURNM6 GENERATE.
+Type 'man IMPPP-557' for more detail.
+viaInitial ends at Wed Jun 19 15:46:23 2024
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from mcombi.view
+Reading libset_slow timing library '/home/citd/Rohith1/dadda_pjt/lib/slow.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'HOLDX1'. The cell will only be used for analysis. (File /home/citd/Rohith1/dadda_pjt/lib/slow.lib)
+Read 462 cells in library 'tsmc18' 
+*** End library_loading (cpu=0.01min, real=0.00min, mem=11.5M, fe_cpu=1.27min, fe_real=7.75min, fe_mem=798.0M) ***
+#% Begin Load netlist data ... (date=06/19 15:46:23, mem=677.2M)
+*** Begin netlist parsing (mem=798.0M) ***
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3X2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3X2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3X2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3X2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR2XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR2XL' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR2X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR2X4' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Created 462 new cells from 1 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist 'dadda_netlist.v'
+
+*** Memory Usage v#1 (Current mem = 797.973M, initial mem = 284.301M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=798.0M) ***
+#% End Load netlist data ... (date=06/19 15:46:23, total cpu=0:00:00.0, real=0:00:00.0, peak res=684.2M, current mem=684.2M)
+Top level cell is dadda.
+Hooked 462 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell dadda ...
+*** Netlist is unique.
+** info: there are 554 modules.
+** info: there are 140 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 842.398M, initial mem = 284.301M) ***
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Horizontal Layer M1 offset = 560 (derived)
+Vertical Layer M2 offset = 660 (derived)
+Generated pitch 0.99 in Metal6 is different from 1.32 defined in technology file in preferred direction.
+Generated pitch 0.56 in Metal5 is different from 1.12 defined in technology file in preferred direction.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+Extraction setup Started 
+Initializing multi-corner RC extraction with 6 active RC Corners ...
+**WARN: (IMPEXT-3570):	PostRoute (EffortLevel high) capacitance scaling factor 1.2 for corner corner_worst_CMAX is different than the expected 1.0 to match signoff Quantus QRC. Check that it is intended.
+**WARN: (IMPEXT-3570):	PostRoute (EffortLevel high) coupling capacitance scaling factor 1.2 for corner corner_worst_CMAX is different than the expected 1.0 to match signoff Quantus QRC. Check that it is intended.
+**WARN: (IMPEXT-3570):	PostRoute (EffortLevel high) resistance scaling factor 1.2 for corner corner_worst_RCMAX is different than the expected 1.0 to match signoff Quantus QRC. Check that it is intended.
+**WARN: (IMPEXT-3570):	PostRoute (EffortLevel high) capacitance scaling factor 1.2 for corner corner_worst_RCMAX is different than the expected 1.0 to match signoff Quantus QRC. Check that it is intended.
+**WARN: (IMPEXT-3570):	PostRoute (EffortLevel high) coupling capacitance scaling factor 1.2 for corner corner_worst_RCMAX is different than the expected 1.0 to match signoff Quantus QRC. Check that it is intended.
+**WARN: (IMPEXT-3570):	PostRoute (EffortLevel high) resistance scaling factor 1.2 for corner corner_worst_RMAX is different than the expected 1.0 to match signoff Quantus QRC. Check that it is intended.
+**WARN: (IMPEXT-3570):	PostRoute (EffortLevel high) capacitance scaling factor 0.8 for corner corner_worst_CMIN is different than the expected 1.0 to match signoff Quantus QRC. Check that it is intended.
+**WARN: (IMPEXT-3570):	PostRoute (EffortLevel high) coupling capacitance scaling factor 0.8 for corner corner_worst_CMIN is different than the expected 1.0 to match signoff Quantus QRC. Check that it is intended.
+**WARN: (IMPEXT-3570):	PostRoute (EffortLevel high) resistance scaling factor 0.8 for corner corner_worst_RCMIN is different than the expected 1.0 to match signoff Quantus QRC. Check that it is intended.
+**WARN: (IMPEXT-3570):	PostRoute (EffortLevel high) capacitance scaling factor 0.8 for corner corner_worst_RCMIN is different than the expected 1.0 to match signoff Quantus QRC. Check that it is intended.
+**WARN: (IMPEXT-3570):	PostRoute (EffortLevel high) coupling capacitance scaling factor 0.8 for corner corner_worst_RCMIN is different than the expected 1.0 to match signoff Quantus QRC. Check that it is intended.
+**WARN: (IMPEXT-3570):	PostRoute (EffortLevel high) resistance scaling factor 0.8 for corner corner_worst_RMIN is different than the expected 1.0 to match signoff Quantus QRC. Check that it is intended.
+**WARN: (IMPEXT-2773):	The via resistance between layers POLY and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M1 and M2 is not defined in the capacitance table file. The via resistance of 6.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M2 and M3 is not defined in the capacitance table file. The via resistance of 6.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M3 and M4 is not defined in the capacitance table file. The via resistance of 6.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M4 and M5 is not defined in the capacitance table file. The via resistance of 6.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M5 and M6 is not defined in the capacitance table file. The via resistance of 2.54 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M1 is not defined in the cap table. Therefore, the LEF value 0.101 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M2 is not defined in the cap table. Therefore, the LEF value 0.101 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M3 is not defined in the cap table. Therefore, the LEF value 0.101 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M4 is not defined in the cap table. Therefore, the LEF value 0.101 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M5 is not defined in the cap table. Therefore, the LEF value 0.101 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M6 is not defined in the cap table. Therefore, the LEF value 0.045 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2773):	The via resistance between layers POLY and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M1 and M2 is not defined in the capacitance table file. The via resistance of 6.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M2 and M3 is not defined in the capacitance table file. The via resistance of 6.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M3 and M4 is not defined in the capacitance table file. The via resistance of 6.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M4 and M5 is not defined in the capacitance table file. The via resistance of 6.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M5 and M6 is not defined in the capacitance table file. The via resistance of 2.54 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M1 is not defined in the cap table. Therefore, the LEF value 0.101 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M2 is not defined in the cap table. Therefore, the LEF value 0.101 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M3 is not defined in the cap table. Therefore, the LEF value 0.101 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M4 is not defined in the cap table. Therefore, the LEF value 0.101 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M5 is not defined in the cap table. Therefore, the LEF value 0.101 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M6 is not defined in the cap table. Therefore, the LEF value 0.045 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2773):	The via resistance between layers POLY and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M1 and M2 is not defined in the capacitance table file. The via resistance of 6.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M2 and M3 is not defined in the capacitance table file. The via resistance of 6.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M3 and M4 is not defined in the capacitance table file. The via resistance of 6.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M4 and M5 is not defined in the capacitance table file. The via resistance of 6.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M5 and M6 is not defined in the capacitance table file. The via resistance of 2.54 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M1 is not defined in the cap table. Therefore, the LEF value 0.101 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M2 is not defined in the cap table. Therefore, the LEF value 0.101 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M3 is not defined in the cap table. Therefore, the LEF value 0.101 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M4 is not defined in the cap table. Therefore, the LEF value 0.101 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M5 is not defined in the cap table. Therefore, the LEF value 0.101 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M6 is not defined in the cap table. Therefore, the LEF value 0.045 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2773):	The via resistance between layers POLY and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M1 and M2 is not defined in the capacitance table file. The via resistance of 6.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M2 and M3 is not defined in the capacitance table file. The via resistance of 6.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M3 and M4 is not defined in the capacitance table file. The via resistance of 6.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M4 and M5 is not defined in the capacitance table file. The via resistance of 6.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2776):	The via resistance between layers M5 and M6 is not defined in the capacitance table file. The via resistance of 2.54 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+Type 'man IMPEXT-2776' for more detail.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M1 is not defined in the cap table. Therefore, the LEF value 0.101 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M2 is not defined in the cap table. Therefore, the LEF value 0.101 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (EMS-27):	Message (IMPEXT-2766) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPEXT-2773):	The via resistance between layers POLY and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+**WARN: (EMS-27):	Message (IMPEXT-2776) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPEXT-2773):	The via resistance between layers POLY and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+Type 'man IMPEXT-2773' for more detail.
+Summary of Active RC-Corners : 
+ 
+ Analysis View: func_slow_CMAX
+    RC-Corner Name        : corner_worst_CMAX
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1.2
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1.2 {1.2 1.2 1.2}
+    RC-Corner PostRoute XCap Factor       : 1.2 {1.2 1.2 1.2}
+    RC-Corner PreRoute Clock Res Factor   : 1
+    RC-Corner PreRoute Clock Cap Factor   : 1.2	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 1.2 {1.2 1.2 1.2} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+ 
+ Analysis View: func_fast_CMAX
+    RC-Corner Name        : corner_worst_CMAX
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1.2
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1.2 {1.2 1.2 1.2}
+    RC-Corner PostRoute XCap Factor       : 1.2 {1.2 1.2 1.2}
+    RC-Corner PreRoute Clock Res Factor   : 1
+    RC-Corner PreRoute Clock Cap Factor   : 1.2	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 1.2 {1.2 1.2 1.2} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+ 
+ Analysis View: func_slow_RCMAX
+    RC-Corner Name        : corner_worst_RCMAX
+    RC-Corner Index       : 1
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1.2
+    RC-Corner PreRoute Cap Factor         : 1.2
+    RC-Corner PostRoute Res Factor        : 1.2 {1.2 1.2 1.2}
+    RC-Corner PostRoute Cap Factor        : 1.2 {1.2 1.2 1.2}
+    RC-Corner PostRoute XCap Factor       : 1.2 {1.2 1.2 1.2}
+    RC-Corner PreRoute Clock Res Factor   : 1.2
+    RC-Corner PreRoute Clock Cap Factor   : 1.2	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 1.2 {1.2 1.2 1.2} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1.2 {1.2 1.2 1.2} 	[Derived from postRoute_res (effortLevel low)]
+ 
+ Analysis View: func_fast_RCMAX
+    RC-Corner Name        : corner_worst_RCMAX
+    RC-Corner Index       : 1
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1.2
+    RC-Corner PreRoute Cap Factor         : 1.2
+    RC-Corner PostRoute Res Factor        : 1.2 {1.2 1.2 1.2}
+    RC-Corner PostRoute Cap Factor        : 1.2 {1.2 1.2 1.2}
+    RC-Corner PostRoute XCap Factor       : 1.2 {1.2 1.2 1.2}
+    RC-Corner PreRoute Clock Res Factor   : 1.2
+    RC-Corner PreRoute Clock Cap Factor   : 1.2	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 1.2 {1.2 1.2 1.2} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1.2 {1.2 1.2 1.2} 	[Derived from postRoute_res (effortLevel low)]
+ 
+ Analysis View: func_slow_RMAX
+    RC-Corner Name        : corner_worst_RMAX
+    RC-Corner Index       : 2
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1.2
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1.2 {1.2 1.2 1.2}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1.2
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1.2 {1.2 1.2 1.2} 	[Derived from postRoute_res (effortLevel low)]
+ 
+ Analysis View: func_fast_RMAX
+    RC-Corner Name        : corner_worst_RMAX
+    RC-Corner Index       : 2
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1.2
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1.2 {1.2 1.2 1.2}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1.2
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1.2 {1.2 1.2 1.2} 	[Derived from postRoute_res (effortLevel low)]
+ 
+ Analysis View: func_slow_CMIN
+    RC-Corner Name        : corner_worst_CMIN
+    RC-Corner Index       : 3
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 0.8
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 0.8 {0.8 0.8 0.8}
+    RC-Corner PostRoute XCap Factor       : 0.8 {0.8 0.8 0.8}
+    RC-Corner PreRoute Clock Res Factor   : 1
+    RC-Corner PreRoute Clock Cap Factor   : 0.8	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 0.8 {0.8 0.8 0.8} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+ 
+ Analysis View: func_fast_CMIN
+    RC-Corner Name        : corner_worst_CMIN
+    RC-Corner Index       : 3
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 0.8
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 0.8 {0.8 0.8 0.8}
+    RC-Corner PostRoute XCap Factor       : 0.8 {0.8 0.8 0.8}
+    RC-Corner PreRoute Clock Res Factor   : 1
+    RC-Corner PreRoute Clock Cap Factor   : 0.8	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 0.8 {0.8 0.8 0.8} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+ 
+ Analysis View: func_slow_RCMIN
+    RC-Corner Name        : corner_worst_RCMIN
+    RC-Corner Index       : 4
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 0.8
+    RC-Corner PreRoute Cap Factor         : 0.8
+    RC-Corner PostRoute Res Factor        : 0.8 {0.8 0.8 0.8}
+    RC-Corner PostRoute Cap Factor        : 0.8 {0.8 0.8 0.8}
+    RC-Corner PostRoute XCap Factor       : 0.8 {0.8 0.8 0.8}
+    RC-Corner PreRoute Clock Res Factor   : 0.8
+    RC-Corner PreRoute Clock Cap Factor   : 0.8	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 0.8 {0.8 0.8 0.8} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 0.8 {0.8 0.8 0.8} 	[Derived from postRoute_res (effortLevel low)]
+ 
+ Analysis View: func_fast_RCMIN
+    RC-Corner Name        : corner_worst_RCMIN
+    RC-Corner Index       : 4
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 0.8
+    RC-Corner PreRoute Cap Factor         : 0.8
+    RC-Corner PostRoute Res Factor        : 0.8 {0.8 0.8 0.8}
+    RC-Corner PostRoute Cap Factor        : 0.8 {0.8 0.8 0.8}
+    RC-Corner PostRoute XCap Factor       : 0.8 {0.8 0.8 0.8}
+    RC-Corner PreRoute Clock Res Factor   : 0.8
+    RC-Corner PreRoute Clock Cap Factor   : 0.8	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 0.8 {0.8 0.8 0.8} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 0.8 {0.8 0.8 0.8} 	[Derived from postRoute_res (effortLevel low)]
+ 
+ Analysis View: func_slow_RMIN
+    RC-Corner Name        : corner_worst_RMIN
+    RC-Corner Index       : 5
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 0.8
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 0.8 {0.8 0.8 0.8}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 0.8
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 0.8 {0.8 0.8 0.8} 	[Derived from postRoute_res (effortLevel low)]
+ 
+ Analysis View: func_fast_RMIN
+    RC-Corner Name        : corner_worst_RMIN
+    RC-Corner Index       : 5
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 0.8
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 0.8 {0.8 0.8 0.8}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 0.8
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 0.8 {0.8 0.8 0.8} 	[Derived from postRoute_res (effortLevel low)]
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner resistance tables ...
+*Info: initialize multi-corner CTS.
+Reading libset_fast timing library '/home/citd/Rohith1/dadda_pjt/lib/fast.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'HOLDX1'. The cell will only be used for analysis. (File /home/citd/Rohith1/dadda_pjt/lib/fast.lib)
+Read 462 cells in library 'tsmc18' 
+Ignored 8 cells in library 'tsmc18' because they are not defined in the LEF file, and they are not used in the Verilog netlist.
+Reading timing constraints file './right.sdc' ...
+Current (total cpu=0:01:17, real=0:07:46, peak res=941.9M, current mem=941.9M)
+INFO (CTE): Constraints read successfully.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=950.5M, current mem=950.5M)
+Current (total cpu=0:01:17, real=0:07:46, peak res=950.5M, current mem=950.5M)
+Total number of combinational cells: 266
+Total number of sequential cells: 178
+Total number of tristate cells: 18
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX1 BUFX12 BUFX16 BUFX20 BUFX3 BUFX4 BUFX8 BUFXL CLKBUFX2 CLKBUFX1 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX8 CLKBUFXL
+Total number of usable buffers: 18
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX2 CLKINVX1 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX8 CLKINVXL INVX1 INVX2 INVX12 INVX16 INVX20 INVX3 INVXL INVX4 INVX8
+Total number of usable inverters: 18
+List of unusable inverters: RFRDX2 RFRDX1 RFRDX4
+Total number of unusable inverters: 3
+List of identified usable delay cells: DLY2X1 DLY1X1 DLY4X1 DLY3X1
+Total number of identified usable delay cells: 4
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-200            4  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPLF-201           50  Pin '%s' in macro '%s' has no ANTENNADIF...
+WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+WARNING   IMPEXT-2766         36  The sheet resistance for layer %s is not...
+WARNING   IMPEXT-2773          6  The via resistance between layers %s and...
+WARNING   IMPEXT-2776         30  The via resistance between layers %s and...
+WARNING   IMPEXT-3570         12  PostRoute (EffortLevel high) %s scaling ...
+WARNING   IMPVL-159          924  Pin '%s' of cell '%s' is defined in LEF ...
+WARNING   IMPPP-557            6  A single-layer VIARULE GENERATE for turn...
+ERROR     TCLCMD-994          48  Can not find '%s' object with the name '...
+WARNING   TECHLIB-302          2  No function defined for cell '%s'. The c...
+*** Message Summary: 1072 warning(s), 48 error(s)
+
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site tsm3site -r 1 0.6 5 5 5 5
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Horizontal Layer M1 offset = 560 (derived)
+Vertical Layer M2 offset = 660 (derived)
+Generated pitch 0.99 in Metal6 is different from 1.32 defined in technology file in preferred direction.
+Generated pitch 0.56 in Metal5 is different from 1.12 defined in technology file in preferred direction.
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site tsm3site -r 0.895297805643 0.599189 5.28 5.04 5.28 5.04
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Horizontal Layer M1 offset = 560 (derived)
+Vertical Layer M2 offset = 660 (derived)
+Generated pitch 0.99 in Metal6 is different from 1.32 defined in technology file in preferred direction.
+Generated pitch 0.56 in Metal5 is different from 1.12 defined in technology file in preferred direction.
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site tsm3site -r 1 0.6 5 5 5 5
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Horizontal Layer M1 offset = 560 (derived)
+Vertical Layer M2 offset = 660 (derived)
+Generated pitch 0.99 in Metal6 is different from 1.32 defined in technology file in preferred direction.
+Generated pitch 0.56 in Metal5 is different from 1.12 defined in technology file in preferred direction.
+**WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer Metal6 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+The ring targets are set to core/block ring wires.
+addRing command will consider rows while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will ignore shorts while creating rings.
+<CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top Metal5 bottom Metal5 left Metal6 right Metal6} -width {top 1 bottom 1 left 1 right 1} -spacing {top 0.5 bottom 0.5 left 0.5 right 0.5} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1184.5M)
+Ring generation is complete.
+vias are now being generated.
+addRing created 8 wires.
+ViaGen created 8 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal5 |        4       |       NA       |
+|  Via56 |        8       |        0       |
+| Metal6 |        4       |       NA       |
++--------+----------------+----------------+
+<CMD> getIoFlowFlag
+<CMD> clearGlobalNets
+<CMD> globalNetConnect VSS -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+**ERROR: (IMPDB-1220):	A global net connection(GNC) rule for connecting pin 'VDD' of cell 'AOI2BB1X2' to global net 'VSS' was specified.  The connection cannot be made because the power pin and the ground net are not of the same polarity.  Check the imported design and make sure the GNC rule is correctly specified or generated. If the polarity mismatch is required, use the 'init_ignore_pgpin_polarity_check' variable to ignore the polarity check.
+Type 'man IMPDB-1220' for more detail.
+**ERROR: (IMPDB-1220):	A global net connection(GNC) rule for connecting pin 'VDD' of cell 'AND2X1' to global net 'VSS' was specified.  The connection cannot be made because the power pin and the ground net are not of the same polarity.  Check the imported design and make sure the GNC rule is correctly specified or generated. If the polarity mismatch is required, use the 'init_ignore_pgpin_polarity_check' variable to ignore the polarity check.
+Type 'man IMPDB-1220' for more detail.
+**ERROR: (IMPDB-1220):	A global net connection(GNC) rule for connecting pin 'VDD' of cell 'ADDHXL' to global net 'VSS' was specified.  The connection cannot be made because the power pin and the ground net are not of the same polarity.  Check the imported design and make sure the GNC rule is correctly specified or generated. If the polarity mismatch is required, use the 'init_ignore_pgpin_polarity_check' variable to ignore the polarity check.
+Type 'man IMPDB-1220' for more detail.
+**ERROR: (IMPDB-1220):	A global net connection(GNC) rule for connecting pin 'VDD' of cell 'ADDFX2' to global net 'VSS' was specified.  The connection cannot be made because the power pin and the ground net are not of the same polarity.  Check the imported design and make sure the GNC rule is correctly specified or generated. If the polarity mismatch is required, use the 'init_ignore_pgpin_polarity_check' variable to ignore the polarity check.
+Type 'man IMPDB-1220' for more detail.
+**ERROR: (IMPDB-1220):	A global net connection(GNC) rule for connecting pin 'VDD' of cell 'AND2X2' to global net 'VSS' was specified.  The connection cannot be made because the power pin and the ground net are not of the same polarity.  Check the imported design and make sure the GNC rule is correctly specified or generated. If the polarity mismatch is required, use the 'init_ignore_pgpin_polarity_check' variable to ignore the polarity check.
+Type 'man IMPDB-1220' for more detail.
+**ERROR: (IMPDB-1220):	A global net connection(GNC) rule for connecting pin 'VDD' of cell 'OAI2BB2XL' to global net 'VSS' was specified.  The connection cannot be made because the power pin and the ground net are not of the same polarity.  Check the imported design and make sure the GNC rule is correctly specified or generated. If the polarity mismatch is required, use the 'init_ignore_pgpin_polarity_check' variable to ignore the polarity check.
+Type 'man IMPDB-1220' for more detail.
+**ERROR: (IMPDB-1220):	A global net connection(GNC) rule for connecting pin 'VDD' of cell 'INVX1' to global net 'VSS' was specified.  The connection cannot be made because the power pin and the ground net are not of the same polarity.  Check the imported design and make sure the GNC rule is correctly specified or generated. If the polarity mismatch is required, use the 'init_ignore_pgpin_polarity_check' variable to ignore the polarity check.
+Type 'man IMPDB-1220' for more detail.
+**ERROR: (IMPDB-1220):	A global net connection(GNC) rule for connecting pin 'VDD' of cell 'OAI21XL' to global net 'VSS' was specified.  The connection cannot be made because the power pin and the ground net are not of the same polarity.  Check the imported design and make sure the GNC rule is correctly specified or generated. If the polarity mismatch is required, use the 'init_ignore_pgpin_polarity_check' variable to ignore the polarity check.
+Type 'man IMPDB-1220' for more detail.
+**ERROR: (IMPDB-1220):	A global net connection(GNC) rule for connecting pin 'VDD' of cell 'NAND2XL' to global net 'VSS' was specified.  The connection cannot be made because the power pin and the ground net are not of the same polarity.  Check the imported design and make sure the GNC rule is correctly specified or generated. If the polarity mismatch is required, use the 'init_ignore_pgpin_polarity_check' variable to ignore the polarity check.
+Type 'man IMPDB-1220' for more detail.
+**ERROR: (IMPDB-1220):	A global net connection(GNC) rule for connecting pin 'VDD' of cell 'AOI2BB1XL' to global net 'VSS' was specified.  The connection cannot be made because the power pin and the ground net are not of the same polarity.  Check the imported design and make sure the GNC rule is correctly specified or generated. If the polarity mismatch is required, use the 'init_ignore_pgpin_polarity_check' variable to ignore the polarity check.
+Type 'man IMPDB-1220' for more detail.
+**ERROR: (IMPDB-1220):	A global net connection(GNC) rule for connecting pin 'VDD' of cell 'MX2X2' to global net 'VSS' was specified.  The connection cannot be made because the power pin and the ground net are not of the same polarity.  Check the imported design and make sure the GNC rule is correctly specified or generated. If the polarity mismatch is required, use the 'init_ignore_pgpin_polarity_check' variable to ignore the polarity check.
+Type 'man IMPDB-1220' for more detail.
+**ERROR: (IMPDB-1220):	A global net connection(GNC) rule for connecting pin 'VDD' of cell 'XOR2X2' to global net 'VSS' was specified.  The connection cannot be made because the power pin and the ground net are not of the same polarity.  Check the imported design and make sure the GNC rule is correctly specified or generated. If the polarity mismatch is required, use the 'init_ignore_pgpin_polarity_check' variable to ignore the polarity check.
+Type 'man IMPDB-1220' for more detail.
+<CMD> globalNetConnect VDD -type tiehi -instanceBasename * -hierarchicalInstance {}
+<CMD> globalNetConnect VSS -type tielo -instanceBasename * -hierarchicalInstance {}
+Warning: pg term VSS of inst a1/r1/g26__2398 is not connect to global special net.
+Warning: pg term VDD of inst a1/r1/g26__2398 is not connect to global special net.
+Warning: pg term VSS of inst a1/r1/g27__5107 is not connect to global special net.
+Warning: pg term VDD of inst a1/r1/g27__5107 is not connect to global special net.
+Warning: pg term VSS of inst a1/r2/g26__6260 is not connect to global special net.
+Warning: pg term VDD of inst a1/r2/g26__6260 is not connect to global special net.
+Warning: pg term VSS of inst a1/r3/g72__4319 is not connect to global special net.
+Warning: pg term VDD of inst a1/r3/g72__4319 is not connect to global special net.
+Warning: pg term VSS of inst a1/r4/g26__8428 is not connect to global special net.
+Warning: pg term VDD of inst a1/r4/g26__8428 is not connect to global special net.
+Warning: pg term VSS of inst a1/r5/g72__5526 is not connect to global special net.
+Warning: pg term VDD of inst a1/r5/g72__5526 is not connect to global special net.
+Warning: pg term VSS of inst a1/r6/g72__6783 is not connect to global special net.
+Warning: pg term VDD of inst a1/r6/g72__6783 is not connect to global special net.
+Warning: pg term VSS of inst a1/r7/g26__3680 is not connect to global special net.
+Warning: pg term VDD of inst a1/r7/g26__3680 is not connect to global special net.
+Warning: pg term VSS of inst a1/r8/g72__1617 is not connect to global special net.
+Warning: pg term VDD of inst a1/r8/g72__1617 is not connect to global special net.
+Warning: pg term VSS of inst a1/r9/g72__2802 is not connect to global special net.
+Warning: pg term VDD of inst a1/r9/g72__2802 is not connect to global special net.
+Warning: pg term VSS of inst a1/r10/g72__1705 is not connect to global special net.
+Warning: pg term VDD of inst a1/r10/g72__1705 is not connect to global special net.
+Warning: pg term VSS of inst a1/r11/g72__5122 is not connect to global special net.
+Warning: pg term VDD of inst a1/r11/g72__5122 is not connect to global special net.
+Warning: pg term VSS of inst a1/r12/g72__8246 is not connect to global special net.
+Warning: pg term VDD of inst a1/r12/g72__8246 is not connect to global special net.
+Warning: pg term VSS of inst a1/r13/g26__7098 is not connect to global special net.
+Warning: pg term VDD of inst a1/r13/g26__7098 is not connect to global special net.
+Warning: pg term VSS of inst a1/r14/g72__6131 is not connect to global special net.
+Warning: pg term VDD of inst a1/r14/g72__6131 is not connect to global special net.
+Warning: pg term VSS of inst a1/r15/g72__1881 is not connect to global special net.
+Warning: pg term VDD of inst a1/r15/g72__1881 is not connect to global special net.
+Warning: pg term VSS of inst a1/r16/g26__5115 is not connect to global special net.
+Warning: pg term VDD of inst a1/r16/g26__5115 is not connect to global special net.
+Warning: pg term VSS of inst a1/r17/g72__7482 is not connect to global special net.
+Warning: pg term VDD of inst a1/r17/g72__7482 is not connect to global special net.
+Warning: pg term VSS of inst a1/r18/g72__4733 is not connect to global special net.
+Warning: pg term VDD of inst a1/r18/g72__4733 is not connect to global special net.
+Warning: pg term VSS of inst a1/r19/g72__6161 is not connect to global special net.
+Warning: pg term VDD of inst a1/r19/g72__6161 is not connect to global special net.
+Warning: pg term VSS of inst a1/r20/g72__9315 is not connect to global special net.
+Warning: pg term VDD of inst a1/r20/g72__9315 is not connect to global special net.
+Warning: pg term VSS of inst a1/r21/g72__9945 is not connect to global special net.
+Warning: pg term VDD of inst a1/r21/g72__9945 is not connect to global special net.
+Warning: pg term VSS of inst a1/r22/g72__2883 is not connect to global special net.
+Warning: pg term VDD of inst a1/r22/g72__2883 is not connect to global special net.
+Warning: pg term VSS of inst a1/r23/g26__2346 is not connect to global special net.
+Warning: pg term VDD of inst a1/r23/g26__2346 is not connect to global special net.
+Warning: pg term VSS of inst a1/r24/g72__1666 is not connect to global special net.
+Warning: pg term VDD of inst a1/r24/g72__1666 is not connect to global special net.
+Warning: pg term VSS of inst a1/r25/g72__7410 is not connect to global special net.
+Warning: pg term VDD of inst a1/r25/g72__7410 is not connect to global special net.
+Warning: pg term VSS of inst a1/r26/g72__6417 is not connect to global special net.
+Warning: pg term VDD of inst a1/r26/g72__6417 is not connect to global special net.
+Warning: pg term VSS of inst a1/r27/g72__5477 is not connect to global special net.
+Warning: pg term VDD of inst a1/r27/g72__5477 is not connect to global special net.
+Warning: pg term VSS of inst a1/r28/g72__2398 is not connect to global special net.
+Warning: pg term VDD of inst a1/r28/g72__2398 is not connect to global special net.
+Warning: pg term VSS of inst a1/r29/g72__5107 is not connect to global special net.
+Warning: pg term VDD of inst a1/r29/g72__5107 is not connect to global special net.
+Warning: pg term VSS of inst a1/r30/g72__6260 is not connect to global special net.
+Warning: pg term VDD of inst a1/r30/g72__6260 is not connect to global special net.
+Warning: pg term VSS of inst a1/r31/g72__4319 is not connect to global special net.
+Warning: pg term VDD of inst a1/r31/g72__4319 is not connect to global special net.
+Warning: pg term VSS of inst a1/r32/g72__8428 is not connect to global special net.
+Warning: pg term VDD of inst a1/r32/g72__8428 is not connect to global special net.
+Warning: pg term VSS of inst a1/g361__5526 is not connect to global special net.
+Warning: pg term VDD of inst a1/g361__5526 is not connect to global special net.
+Warning: pg term VSS of inst a1/g362__6783 is not connect to global special net.
+Warning: pg term VDD of inst a1/g362__6783 is not connect to global special net.
+Warning: pg term VSS of inst a1/g363__3680 is not connect to global special net.
+Warning: pg term VDD of inst a1/g363__3680 is not connect to global special net.
+Warning: pg term VSS of inst a1/g364__1617 is not connect to global special net.
+Warning: pg term VDD of inst a1/g364__1617 is not connect to global special net.
+Warning: pg term VSS of inst a1/g365__2802 is not connect to global special net.
+Warning: pg term VDD of inst a1/g365__2802 is not connect to global special net.
+Warning: pg term VSS of inst a1/g366__1705 is not connect to global special net.
+Warning: pg term VDD of inst a1/g366__1705 is not connect to global special net.
+Warning: pg term VSS of inst a1/g367__5122 is not connect to global special net.
+Warning: pg term VDD of inst a1/g367__5122 is not connect to global special net.
+Warning: pg term VSS of inst a1/g368__8246 is not connect to global special net.
+Warning: pg term VDD of inst a1/g368__8246 is not connect to global special net.
+Warning: pg term VSS of inst a1/g369__7098 is not connect to global special net.
+Warning: pg term VDD of inst a1/g369__7098 is not connect to global special net.
+Warning: pg term VSS of inst a1/g370__6131 is not connect to global special net.
+Warning: pg term VDD of inst a1/g370__6131 is not connect to global special net.
+Warning: pg term VSS of inst a1/g371__1881 is not connect to global special net.
+Warning: pg term VDD of inst a1/g371__1881 is not connect to global special net.
+Warning: pg term VSS of inst a1/g372__5115 is not connect to global special net.
+Warning: pg term VDD of inst a1/g372__5115 is not connect to global special net.
+Warning: pg term VSS of inst a1/g373__7482 is not connect to global special net.
+Warning: pg term VDD of inst a1/g373__7482 is not connect to global special net.
+Warning: pg term VSS of inst a1/g374__4733 is not connect to global special net.
+Warning: pg term VDD of inst a1/g374__4733 is not connect to global special net.
+Warning: pg term VSS of inst a1/g375__6161 is not connect to global special net.
+Warning: pg term VDD of inst a1/g375__6161 is not connect to global special net.
+Warning: pg term VSS of inst a1/g376__9315 is not connect to global special net.
+Warning: pg term VDD of inst a1/g376__9315 is not connect to global special net.
+Warning: pg term VSS of inst a1/g377__9945 is not connect to global special net.
+Warning: pg term VDD of inst a1/g377__9945 is not connect to global special net.
+Warning: pg term VSS of inst a1/g378__2883 is not connect to global special net.
+Warning: pg term VDD of inst a1/g378__2883 is not connect to global special net.
+Warning: pg term VSS of inst a1/g379__2346 is not connect to global special net.
+Warning: pg term VDD of inst a1/g379__2346 is not connect to global special net.
+Warning: pg term VSS of inst a1/g380__1666 is not connect to global special net.
+Warning: pg term VDD of inst a1/g380__1666 is not connect to global special net.
+Warning: pg term VSS of inst a1/g381__7410 is not connect to global special net.
+Warning: pg term VDD of inst a1/g381__7410 is not connect to global special net.
+Warning: pg term VSS of inst a1/g382__6417 is not connect to global special net.
+Warning: pg term VDD of inst a1/g382__6417 is not connect to global special net.
+Warning: pg term VSS of inst a1/g383__5477 is not connect to global special net.
+Warning: pg term VDD of inst a1/g383__5477 is not connect to global special net.
+Warning: pg term VSS of inst a1/g384__2398 is not connect to global special net.
+Warning: pg term VDD of inst a1/g384__2398 is not connect to global special net.
+Warning: pg term VSS of inst a1/g385__5107 is not connect to global special net.
+Warning: pg term VDD of inst a1/g385__5107 is not connect to global special net.
+Warning: pg term VSS of inst a1/g386__6260 is not connect to global special net.
+Warning: pg term VDD of inst a1/g386__6260 is not connect to global special net.
+Warning: pg term VSS of inst a1/g387__4319 is not connect to global special net.
+Warning: pg term VDD of inst a1/g387__4319 is not connect to global special net.
+Warning: pg term VSS of inst a1/g388__8428 is not connect to global special net.
+Warning: pg term VDD of inst a1/g388__8428 is not connect to global special net.
+Warning: pg term VSS of inst a1/g389__5526 is not connect to global special net.
+Warning: pg term VDD of inst a1/g389__5526 is not connect to global special net.
+Warning: pg term VSS of inst a1/g390__6783 is not connect to global special net.
+Warning: pg term VDD of inst a1/g390__6783 is not connect to global special net.
+Warning: pg term VSS of inst a1/g391__3680 is not connect to global special net.
+Warning: pg term VDD of inst a1/g391__3680 is not connect to global special net.
+Warning: pg term VSS of inst a1/g392__1617 is not connect to global special net.
+Warning: pg term VDD of inst a1/g392__1617 is not connect to global special net.
+Warning: pg term VSS of inst a1/g393__2802 is not connect to global special net.
+Warning: pg term VDD of inst a1/g393__2802 is not connect to global special net.
+Warning: pg term VSS of inst a1/g394__1705 is not connect to global special net.
+Warning: pg term VDD of inst a1/g394__1705 is not connect to global special net.
+Warning: pg term VSS of inst a1/g395__5122 is not connect to global special net.
+Warning: pg term VDD of inst a1/g395__5122 is not connect to global special net.
+Warning: pg term VSS of inst a1/g396__8246 is not connect to global special net.
+Warning: pg term VDD of inst a1/g396__8246 is not connect to global special net.
+Warning: pg term VSS of inst a2/m1/g26__7098 is not connect to global special net.
+Warning: pg term VDD of inst a2/m1/g26__7098 is not connect to global special net.
+Warning: pg term VSS of inst a2/m2/g72__6131 is not connect to global special net.
+Warning: pg term VDD of inst a2/m2/g72__6131 is not connect to global special net.
+Warning: pg term VSS of inst a2/m3/g26__1881 is not connect to global special net.
+Warning: pg term VDD of inst a2/m3/g26__1881 is not connect to global special net.
+Warning: pg term VSS of inst a2/m4/g26__5115 is not connect to global special net.
+Warning: pg term VDD of inst a2/m4/g26__5115 is not connect to global special net.
+Warning: pg term VSS of inst a2/m5/g26__7482 is not connect to global special net.
+Warning: pg term VDD of inst a2/m5/g26__7482 is not connect to global special net.
+Warning: pg term VSS of inst a2/m6/g26__4733 is not connect to global special net.
+Warning: pg term VDD of inst a2/m6/g26__4733 is not connect to global special net.
+Warning: pg term VSS of inst a2/m7/g72__6161 is not connect to global special net.
+Warning: pg term VDD of inst a2/m7/g72__6161 is not connect to global special net.
+Warning: pg term VSS of inst a2/m8/g26__9315 is not connect to global special net.
+Warning: pg term VDD of inst a2/m8/g26__9315 is not connect to global special net.
+Warning: pg term VSS of inst a2/m9/g72__9945 is not connect to global special net.
+Warning: pg term VDD of inst a2/m9/g72__9945 is not connect to global special net.
+Warning: pg term VSS of inst a2/m10/g72__2883 is not connect to global special net.
+Warning: pg term VDD of inst a2/m10/g72__2883 is not connect to global special net.
+Warning: pg term VSS of inst a2/m11/g72__2346 is not connect to global special net.
+Warning: pg term VDD of inst a2/m11/g72__2346 is not connect to global special net.
+Warning: pg term VSS of inst a2/m12/g72__1666 is not connect to global special net.
+Warning: pg term VDD of inst a2/m12/g72__1666 is not connect to global special net.
+Warning: pg term VSS of inst a2/m13/g72__7410 is not connect to global special net.
+Warning: pg term VDD of inst a2/m13/g72__7410 is not connect to global special net.
+Warning: pg term VSS of inst a2/m14/g72__6417 is not connect to global special net.
+Warning: pg term VDD of inst a2/m14/g72__6417 is not connect to global special net.
+Warning: pg term VSS of inst a2/m15/g72__5477 is not connect to global special net.
+Warning: pg term VDD of inst a2/m15/g72__5477 is not connect to global special net.
+Warning: pg term VSS of inst a2/m16/g72__2398 is not connect to global special net.
+Warning: pg term VDD of inst a2/m16/g72__2398 is not connect to global special net.
+Warning: pg term VSS of inst a2/m17/g72__5107 is not connect to global special net.
+Warning: pg term VDD of inst a2/m17/g72__5107 is not connect to global special net.
+Warning: pg term VSS of inst a2/m18/g72__6260 is not connect to global special net.
+Warning: pg term VDD of inst a2/m18/g72__6260 is not connect to global special net.
+Warning: pg term VSS of inst a2/m19/g72__4319 is not connect to global special net.
+Warning: pg term VDD of inst a2/m19/g72__4319 is not connect to global special net.
+Warning: pg term VSS of inst a2/m20/g72__8428 is not connect to global special net.
+Warning: pg term VDD of inst a2/m20/g72__8428 is not connect to global special net.
+Warning: pg term VSS of inst a2/m21/g72__5526 is not connect to global special net.
+Warning: pg term VDD of inst a2/m21/g72__5526 is not connect to global special net.
+Warning: pg term VSS of inst a2/m22/g72__6783 is not connect to global special net.
+Warning: pg term VDD of inst a2/m22/g72__6783 is not connect to global special net.
+Warning: pg term VSS of inst a2/m23/g72__3680 is not connect to global special net.
+Warning: pg term VDD of inst a2/m23/g72__3680 is not connect to global special net.
+Warning: pg term VSS of inst a2/m24/g72__1617 is not connect to global special net.
+Warning: pg term VDD of inst a2/m24/g72__1617 is not connect to global special net.
+Warning: pg term VSS of inst a2/m25/g72__2802 is not connect to global special net.
+Warning: pg term VDD of inst a2/m25/g72__2802 is not connect to global special net.
+Warning: pg term VSS of inst a2/m26/g72__1705 is not connect to global special net.
+Warning: pg term VDD of inst a2/m26/g72__1705 is not connect to global special net.
+Warning: pg term VSS of inst a2/g281__5122 is not connect to global special net.
+Warning: pg term VDD of inst a2/g281__5122 is not connect to global special net.
+Warning: pg term VSS of inst a2/g282__8246 is not connect to global special net.
+Warning: pg term VDD of inst a2/g282__8246 is not connect to global special net.
+Warning: pg term VSS of inst a2/g283__7098 is not connect to global special net.
+Warning: pg term VDD of inst a2/g283__7098 is not connect to global special net.
+Warning: pg term VSS of inst a2/g284__6131 is not connect to global special net.
+Warning: pg term VDD of inst a2/g284__6131 is not connect to global special net.
+Warning: pg term VSS of inst a2/g285__1881 is not connect to global special net.
+Warning: pg term VDD of inst a2/g285__1881 is not connect to global special net.
+Warning: pg term VSS of inst a2/g286__5115 is not connect to global special net.
+Warning: pg term VDD of inst a2/g286__5115 is not connect to global special net.
+Warning: pg term VSS of inst a2/g287__7482 is not connect to global special net.
+Warning: pg term VDD of inst a2/g287__7482 is not connect to global special net.
+Warning: pg term VSS of inst a2/g288__4733 is not connect to global special net.
+Warning: pg term VDD of inst a2/g288__4733 is not connect to global special net.
+Warning: pg term VSS of inst a2/g289__6161 is not connect to global special net.
+Warning: pg term VDD of inst a2/g289__6161 is not connect to global special net.
+Warning: pg term VSS of inst a2/g290__9315 is not connect to global special net.
+Warning: pg term VDD of inst a2/g290__9315 is not connect to global special net.
+Warning: pg term VSS of inst a2/g291__9945 is not connect to global special net.
+Warning: pg term VDD of inst a2/g291__9945 is not connect to global special net.
+Warning: pg term VSS of inst a2/g292__2883 is not connect to global special net.
+Warning: pg term VDD of inst a2/g292__2883 is not connect to global special net.
+Warning: pg term VSS of inst a2/g293__2346 is not connect to global special net.
+Warning: pg term VDD of inst a2/g293__2346 is not connect to global special net.
+Warning: pg term VSS of inst a2/g294__1666 is not connect to global special net.
+Warning: pg term VDD of inst a2/g294__1666 is not connect to global special net.
+Warning: pg term VSS of inst a2/g295__7410 is not connect to global special net.
+Warning: pg term VDD of inst a2/g295__7410 is not connect to global special net.
+Warning: pg term VSS of inst a2/g296__6417 is not connect to global special net.
+Warning: pg term VDD of inst a2/g296__6417 is not connect to global special net.
+Warning: pg term VSS of inst a2/g297__5477 is not connect to global special net.
+Warning: pg term VDD of inst a2/g297__5477 is not connect to global special net.
+Warning: pg term VSS of inst a2/g298__2398 is not connect to global special net.
+Warning: pg term VDD of inst a2/g298__2398 is not connect to global special net.
+Warning: pg term VSS of inst a2/g299__5107 is not connect to global special net.
+Warning: pg term VDD of inst a2/g299__5107 is not connect to global special net.
+Warning: pg term VSS of inst a2/g300__6260 is not connect to global special net.
+Warning: pg term VDD of inst a2/g300__6260 is not connect to global special net.
+Warning: pg term VSS of inst a2/g301__4319 is not connect to global special net.
+Warning: pg term VDD of inst a2/g301__4319 is not connect to global special net.
+Warning: pg term VSS of inst a2/g302__8428 is not connect to global special net.
+Warning: pg term VDD of inst a2/g302__8428 is not connect to global special net.
+Warning: pg term VSS of inst a2/g303__5526 is not connect to global special net.
+Warning: pg term VDD of inst a2/g303__5526 is not connect to global special net.
+Warning: pg term VSS of inst a2/g304__6783 is not connect to global special net.
+Warning: pg term VDD of inst a2/g304__6783 is not connect to global special net.
+Warning: pg term VSS of inst a2/g305__3680 is not connect to global special net.
+Warning: pg term VDD of inst a2/g305__3680 is not connect to global special net.
+Warning: pg term VSS of inst a2/g306__1617 is not connect to global special net.
+Warning: pg term VDD of inst a2/g306__1617 is not connect to global special net.
+Warning: pg term VSS of inst a2/g307__2802 is not connect to global special net.
+Warning: pg term VDD of inst a2/g307__2802 is not connect to global special net.
+Warning: pg term VSS of inst a2/g308__1705 is not connect to global special net.
+Warning: pg term VDD of inst a2/g308__1705 is not connect to global special net.
+Warning: pg term VSS of inst x1/a1/g26__5122 is not connect to global special net.
+Warning: pg term VDD of inst x1/a1/g26__5122 is not connect to global special net.
+Warning: pg term VSS of inst x1/a1/g27__8246 is not connect to global special net.
+Warning: pg term VDD of inst x1/a1/g27__8246 is not connect to global special net.
+Warning: pg term VSS of inst x1/a2/g72__7098 is not connect to global special net.
+Warning: pg term VDD of inst x1/a2/g72__7098 is not connect to global special net.
+Warning: pg term VSS of inst x1/a3/g72__6131 is not connect to global special net.
+Warning: pg term VDD of inst x1/a3/g72__6131 is not connect to global special net.
+Warning: pg term VSS of inst x2/g91__1881 is not connect to global special net.
+Warning: pg term VDD of inst x2/g91__1881 is not connect to global special net.
+Warning: pg term VSS of inst x2/g92 is not connect to global special net.
+Warning: pg term VDD of inst x2/g92 is not connect to global special net.
+Warning: pg term VSS of inst x2/g93__5115 is not connect to global special net.
+Warning: pg term VDD of inst x2/g93__5115 is not connect to global special net.
+Warning: pg term VSS of inst x2/g94__7482 is not connect to global special net.
+Warning: pg term VDD of inst x2/g94__7482 is not connect to global special net.
+Warning: pg term VSS of inst x2/g95__4733 is not connect to global special net.
+Warning: pg term VDD of inst x2/g95__4733 is not connect to global special net.
+Warning: pg term VSS of inst x2/g96__6161 is not connect to global special net.
+Warning: pg term VDD of inst x2/g96__6161 is not connect to global special net.
+Warning: pg term VSS of inst x2/g97__9315 is not connect to global special net.
+Warning: pg term VDD of inst x2/g97__9315 is not connect to global special net.
+Warning: pg term VSS of inst x2/g98__9945 is not connect to global special net.
+Warning: pg term VDD of inst x2/g98__9945 is not connect to global special net.
+Warning: pg term VSS of inst g117__2883 is not connect to global special net.
+Warning: pg term VDD of inst g117__2883 is not connect to global special net.
+Warning: pg term VSS of inst g118__2346 is not connect to global special net.
+Warning: pg term VDD of inst g118__2346 is not connect to global special net.
+Warning: pg term VSS of inst g119__1666 is not connect to global special net.
+Warning: pg term VDD of inst g119__1666 is not connect to global special net.
+Warning: pg term VSS of inst g120__7410 is not connect to global special net.
+Warning: pg term VDD of inst g120__7410 is not connect to global special net.
+Warning: pg term VSS of inst g2__6417 is not connect to global special net.
+Warning: pg term VDD of inst g2__6417 is not connect to global special net.
+<CMD> setSrouteMode -viaConnectToShape { noshape }
+<CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { Metal1(1) Metal6(6) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) Metal6(6) } -nets { VDD VSS } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { Metal1(1) Metal6(6) }
+*** Begin SPECIAL ROUTE on Wed Jun 19 15:53:15 2024 ***
+SPECIAL ROUTE ran on directory: /home/citd/Rohith1/dadda_pjt
+SPECIAL ROUTE ran on machine: cadence_51 (Linux 3.10.0-1160.el7.x86_64 Xeon 2.11Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "VDD VSS"
+routeSpecial set to true
+srouteBlockPin set to "useLef"
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectConverterPin set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 6
+srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+srouteNoViaOnWireShape set to "padring ring stripe blockring blockpin coverpin blockwire corewire followpin iowire"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 6
+srouteTopTargetLayerLimit set to 6
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 2313.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 12 layers, 6 routing layers, 1 overlap layer
+Read in 471 macros, 14 used
+Read in 12 components
+  12 core components: 12 unplaced, 0 placed, 0 fixed
+Read in 32 logical pins
+Read in 32 nets
+Read in 2 special nets, 2 routed
+2 nets selected.
+
+Begin power routing ...
+**WARN: (IMPSR-1253):	Unable to find any standard cell pin connected to the VDD net.
+ Run the globalNetConnect command or change the CPF file to ensure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND' for the connection.
+**WARN: (IMPSR-1254):	Unable to connect the specified objects, since block pins of the VDD net were not found in the design. Check netlist or change the parameter value to include block pins in the design.
+**WARN: (IMPSR-1256):	Unable to find any CORE class pad pin of the VDD net due to unavailability of the pin or check netlist in the routing area or layer. Change routing area or layer to include the expected pin or check netlist. Alternatively, change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-1253):	Unable to find any standard cell pin connected to the VSS net.
+ Run the globalNetConnect command or change the CPF file to ensure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND' for the connection.
+**WARN: (IMPSR-1254):	Unable to connect the specified objects, since block pins of the VSS net were not found in the design. Check netlist or change the parameter value to include block pins in the design.
+**WARN: (IMPSR-1256):	Unable to find any CORE class pad pin of the VSS net due to unavailability of the pin or check netlist in the routing area or layer. Change routing area or layer to include the expected pin or check netlist. Alternatively, change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+CPU time for FollowPin 0 seconds
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+CPU time for FollowPin 0 seconds
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 36
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+  Number of Followpin connections: 18
+End power routing: cpu: 0:00:00, real: 0:00:06, peak: 2373.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 0 via definition ...Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+
+sroute created 54 wires.
+ViaGen created 180 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal1 |       54       |       NA       |
+|  Via12 |       36       |        0       |
+|  Via23 |       36       |        0       |
+|  Via34 |       36       |        0       |
+|  Via45 |       36       |        0       |
+|  Via56 |       36       |        0       |
++--------+----------------+----------------+
+<CMD> setSrouteMode -viaConnectToShape { noshape }
+<CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { Metal1(1) Metal6(6) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) Metal6(6) } -nets { VDD VSS } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { Metal1(1) Metal6(6) }
+*** Begin SPECIAL ROUTE on Wed Jun 19 15:53:24 2024 ***
+SPECIAL ROUTE ran on directory: /home/citd/Rohith1/dadda_pjt
+SPECIAL ROUTE ran on machine: cadence_51 (Linux 3.10.0-1160.el7.x86_64 Xeon 1.67Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "VDD VSS"
+routeSpecial set to true
+srouteBlockPin set to "useLef"
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectConverterPin set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 6
+srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+srouteNoViaOnWireShape set to "padring ring stripe blockring blockpin coverpin blockwire corewire followpin iowire"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 6
+srouteTopTargetLayerLimit set to 6
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 2373.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 12 layers, 6 routing layers, 1 overlap layer
+Read in 471 macros, 14 used
+Read in 12 components
+  12 core components: 12 unplaced, 0 placed, 0 fixed
+Read in 32 logical pins
+Read in 32 nets
+Read in 2 special nets, 2 routed
+2 nets selected.
+
+Begin power routing ...
+**WARN: (IMPSR-1253):	Unable to find any standard cell pin connected to the VDD net.
+ Run the globalNetConnect command or change the CPF file to ensure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND' for the connection.
+**WARN: (IMPSR-1254):	Unable to connect the specified objects, since block pins of the VDD net were not found in the design. Check netlist or change the parameter value to include block pins in the design.
+**WARN: (IMPSR-1256):	Unable to find any CORE class pad pin of the VDD net due to unavailability of the pin or check netlist in the routing area or layer. Change routing area or layer to include the expected pin or check netlist. Alternatively, change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-1253):	Unable to find any standard cell pin connected to the VSS net.
+ Run the globalNetConnect command or change the CPF file to ensure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND' for the connection.
+**WARN: (IMPSR-1254):	Unable to connect the specified objects, since block pins of the VSS net were not found in the design. Check netlist or change the parameter value to include block pins in the design.
+**WARN: (IMPSR-1256):	Unable to find any CORE class pad pin of the VSS net due to unavailability of the pin or check netlist in the routing area or layer. Change routing area or layer to include the expected pin or check netlist. Alternatively, change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+CPU time for FollowPin 0 seconds
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+CPU time for FollowPin 0 seconds
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 0
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 2375.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 0 via definition ...
+sroute created 0 wire.
+ViaGen created 0 via, deleted 0 via to avoid violation.
+<CMD> setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+<CMD> setEndCapMode -reset
+<CMD> setEndCapMode -boundary_tap false
+<CMD> setNanoRouteMode -quiet -droutePostRouteSpreadWire 1
+<CMD> setNanoRouteMode -quiet -timingEngine {}
+<CMD> setUsefulSkewMode -maxSkew false -noBoundary false -useCells {DLY4X1 DLY3X1 DLY2X1 DLY1X1 CLKBUFXL CLKBUFX8 CLKBUFX4 CLKBUFX3 CLKBUFX20 CLKBUFX2 CLKBUFX16 CLKBUFX12 CLKBUFX1 BUFXL BUFX8 BUFX4 BUFX3 BUFX20 BUFX2 BUFX16 BUFX12 BUFX1 INVXL INVX8 INVX4 INVX3 INVX20 INVX2 INVX16 INVX12 INVX1 CLKINVXL CLKINVX8 CLKINVX4 CLKINVX3 CLKINVX20 CLKINVX2 CLKINVX16 CLKINVX12 CLKINVX1} -maxAllowedDelay 1
+<CMD> setPlaceMode -reset
+<CMD> setPlaceMode -congEffort auto -timingDriven 1 -clkGateAware 1 -powerDriven 1 -ignoreScan 1 -reorderScan 1 -ignoreSpare 0 -placeIOPins 0 -moduleAwareSpare 0 -preserveRouting 1 -rmAffectedRouting 0 -checkRoute 0 -swapEEQ 0
+<CMD> setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+<CMD> setEndCapMode -reset
+<CMD> setEndCapMode -boundary_tap false
+<CMD> setUsefulSkewMode -maxSkew false -noBoundary false -useCells {DLY4X1 DLY3X1 DLY2X1 DLY1X1 CLKBUFXL CLKBUFX8 CLKBUFX4 CLKBUFX3 CLKBUFX20 CLKBUFX2 CLKBUFX16 CLKBUFX12 CLKBUFX1 BUFXL BUFX8 BUFX4 BUFX3 BUFX20 BUFX2 BUFX16 BUFX12 BUFX1 INVXL INVX8 INVX4 INVX3 INVX20 INVX2 INVX16 INVX12 INVX1 CLKINVXL CLKINVX8 CLKINVX4 CLKINVX3 CLKINVX20 CLKINVX2 CLKINVX16 CLKINVX12 CLKINVX1} -maxAllowedDelay 1
+<CMD> setPlaceMode -fp false
+<CMD> place_design
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+*** Starting placeDesign default flow ***
+*** Start deleteBufferTree ***
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+Updating netlist
+
+*summary: 0 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:00.1) ***
+**INFO: Enable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 101.
+**WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF. 
+**INFO: Analyzing IO path groups for slack adjustment
+**INFO: Disable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+**INFO: Pre-place timing setting for timing analysis already disabled
+Deleted 0 physical inst  (cell - / prefix -).
+INFO: #ExclusiveGroups=0
+INFO: There are no Exclusive Groups.
+*** Starting "NanoPlace(TM) placement v#9 (mem=1259.8M)" ...
+*** Build Buffered Sizing Timing Model
+(cpu=0:00:01.8 mem=1259.8M) ***
+*** Build Virtual Sizing Timing Model
+(cpu=0:00:02.0 mem=1259.8M) ***
+No user-set net weight.
+Net fanout histogram:
+2		: 184 (85.6%) nets
+3		: 6 (2.8%) nets
+4     -	14	: 25 (11.6%) nets
+15    -	39	: 0 (0.0%) nets
+40    -	79	: 0 (0.0%) nets
+80    -	159	: 0 (0.0%) nets
+160   -	319	: 0 (0.0%) nets
+320   -	639	: 0 (0.0%) nets
+640   -	1279	: 0 (0.0%) nets
+1280  -	2559	: 0 (0.0%) nets
+2560  -	5119	: 0 (0.0%) nets
+5120+		: 0 (0.0%) nets
+Options: timingDriven powerDriven clkGateAware ignoreScan pinGuide congEffort=auto gpeffort=medium 
+**WARN: (IMPSP-9042):	Scan chains were not defined, -place_global_ignore_scan option will be ignored.
+Define the scan chains before using this option.
+Type 'man IMPSP-9042' for more detail.
+#std cell=140 (0 fixed + 140 movable) #buf cell=0 #inv cell=1 #block=0 (0 floating + 0 preplaced)
+#ioInst=0 #net=215 #term=568 #term/net=2.64, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=32
+stdCell: 140 single + 0 double + 0 multi
+Total standard cell length = 0.9748 (mm), area = 0.0049 (mm^2)
+Estimated cell power/ground rail width = 0.945 um
+Average module density = 0.624.
+Density for the design = 0.624.
+       = stdcell_area 1477 sites (4913 um^2) / alloc_area 2367 sites (7872 um^2).
+Pin Density = 0.2304.
+            = total # of pins 568 / total area 2465.
+=== lastAutoLevel = 5 
+**WARN: (IMPSP-9532):	Skipping assigning placement activity power weights when activity file was not read
+Clock gating cells determined by native netlist tracing.
+Iteration  1: Total net bbox = 3.325e-12 (1.14e-12 2.19e-12)
+              Est.  stn bbox = 3.428e-12 (1.14e-12 2.29e-12)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1275.3M
+Iteration  2: Total net bbox = 3.325e-12 (1.14e-12 2.19e-12)
+              Est.  stn bbox = 3.428e-12 (1.14e-12 2.29e-12)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1275.3M
+Iteration  3: Total net bbox = 1.184e+00 (7.26e-01 4.58e-01)
+              Est.  stn bbox = 1.270e+00 (7.78e-01 4.92e-01)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1276.7M
+Active setup views:
+    func_fast_RMIN
+Iteration  4: Total net bbox = 2.774e+03 (1.17e+03 1.60e+03)
+              Est.  stn bbox = 3.085e+03 (1.32e+03 1.76e+03)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 1277.7M
+Active setup views:
+    func_fast_RMIN
+Iteration  5: Total net bbox = 3.351e+03 (1.44e+03 1.91e+03)
+              Est.  stn bbox = 3.706e+03 (1.62e+03 2.08e+03)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 1277.7M
+Iteration  6: Total net bbox = 6.473e+03 (3.35e+03 3.12e+03)
+              Est.  stn bbox = 7.207e+03 (3.71e+03 3.50e+03)
+              cpu = 0:00:00.2 real = 0:00:01.0 mem = 1277.7M
+*** cost = 6.473e+03 (3.35e+03 3.12e+03) (cpu for global=0:00:00.2) real=0:00:01.0***
+Info: 0 clock gating cells identified, 0 (on average) moved 0/1
+Solver runtime cpu: 0:00:00.2 real: 0:00:00.1
+Core Placement runtime cpu: 0:00:00.2 real: 0:00:01.0
+**WARN: (IMPSP-9025):	No scan chain specified/traced.
+Type 'man IMPSP-9025' for more detail.
+*** Starting refinePlace (0:02:30 mem=1293.7M) ***
+Total net bbox length = 6.473e+03 (3.354e+03 3.119e+03) (ext = 2.586e+03)
+Move report: Detail placement moves 140 insts, mean move: 5.38 um, max move: 16.77 um 
+	Max move on inst (a1/g361__5526): (35.13, 52.02) --> (21.78, 55.44)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 1293.7MB
+Summary Report:
+Instances move: 140 (out of 140 movable)
+Instances flipped: 0
+Mean displacement: 5.38 um
+Max displacement: 16.77 um (Instance: a1/g361__5526) (35.1265, 52.0195) -> (21.78, 55.44)
+	Length: 4 sites, height: 1 rows, site name: tsm3site, cell type: AND2X1
+Total net bbox length = 6.282e+03 (2.815e+03 3.467e+03) (ext = 2.384e+03)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 1293.7MB
+*** Finished refinePlace (0:02:30 mem=1293.7M) ***
+*** End of Placement (cpu=0:00:02.8, real=0:00:04.0, mem=1293.7M) ***
+default core: bins with density > 0.750 =  0.00 % ( 0 / 4 )
+Density distribution unevenness ratio = 1.838%
+*** Free Virtual Timing Model ...(mem=1293.7M)
+**INFO: Enable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 101.
+**WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF. 
+**INFO: Analyzing IO path groups for slack adjustment
+**INFO: Disable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Info: Disable timing driven in postCTS congRepair.
+
+Starting congRepair ...
+[NR-eGR] Track table information for default rule: 
+[NR-eGR] Metal1 has no routable track
+[NR-eGR] Metal2 has single uniform track structure
+[NR-eGR] Metal3 has single uniform track structure
+[NR-eGR] Metal4 has single uniform track structure
+[NR-eGR] Metal5 has single uniform track structure
+[NR-eGR] Metal6 has single uniform track structure
+[NR-eGR] Read 348 PG shapes
+[NR-eGR] #Routing Blockages  : 0
+[NR-eGR] #Instance Blockages : 0
+[NR-eGR] #PG Blockages       : 348
+[NR-eGR] #Halo Blockages     : 0
+[NR-eGR] #Boundary Blockages : 0
+[NR-eGR] Num Prerouted Nets = 0  Num Prerouted Wires = 0
+[NR-eGR] Read numTotalNets=199  numIgnoredNets=0
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id: 0  Nets: 199 
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] Layer group 1: route 199 net(s) in layer range [2, 6]
+[NR-eGR] Early Global Route overflow of layer group 1: 0.00% H + 0.00% V. EstWL: 4.163040e+03um
+[NR-eGR] Congestion Analysis By layer: (blocked Gcells are excluded) 
+[NR-eGR]                        OverCon            
+[NR-eGR]                         #Gcell     %Gcell
+[NR-eGR]       Layer                (0)    OverCon 
+[NR-eGR] ----------------------------------------------
+[NR-eGR]  Metal1  (1)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal2  (2)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal3  (3)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal4  (4)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal5  (5)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal6  (6)         0( 0.00%)   ( 0.00%) 
+[NR-eGR] ----------------------------------------------
+[NR-eGR] Total                0( 0.00%)   ( 0.00%) 
+[NR-eGR] 
+[NR-eGR] Overflow after Early Global Route (GR compatible) 0.00% H + 0.00% V
+[NR-eGR] Overflow after Early Global Route 0.00% H + 0.00% V
+Early Global Route congestion estimation runtime: 0.01 seconds, mem = 1284.8M
+Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+Skipped repairing congestion.
+[NR-eGR] Started Export DB wires ( Curr Mem: 1284.77 MB )
+[NR-eGR] Started Export all nets ( Curr Mem: 1284.77 MB )
+[NR-eGR] Finished Export all nets ( CPU: 0.00 sec, Real: 0.00 sec, Curr Mem: 1284.77 MB )
+[NR-eGR] Started Set wire vias ( Curr Mem: 1284.77 MB )
+[NR-eGR] Finished Set wire vias ( CPU: 0.00 sec, Real: 0.00 sec, Curr Mem: 1284.77 MB )
+[NR-eGR] Finished Export DB wires ( CPU: 0.00 sec, Real: 0.00 sec, Curr Mem: 1284.77 MB )
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Metal1  (1F) length: 0.000000e+00um, number of vias: 520
+[NR-eGR] Metal2  (2V) length: 2.390080e+03um, number of vias: 705
+[NR-eGR] Metal3  (3H) length: 1.861860e+03um, number of vias: 14
+[NR-eGR] Metal4  (4V) length: 1.316000e+02um, number of vias: 0
+[NR-eGR] Metal5  (5H) length: 0.000000e+00um, number of vias: 0
+[NR-eGR] Metal6  (6V) length: 0.000000e+00um, number of vias: 0
+[NR-eGR] Total length: 4.383540e+03um, number of vias: 1239
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total eGR-routed clock nets wire length: 0.000000e+00um 
+[NR-eGR] --------------------------------------------------------------------------
+Early Global Route wiring runtime: 0.00 seconds, mem = 1284.8M
+Tdgp not successfully inited but do clear! skip clearing
+End of congRepair (cpu=0:00:00.0, real=0:00:00.0)
+*** Finishing placeDesign default flow ***
+**placeDesign ... cpu = 0: 0: 3, real = 0: 0: 4, mem = 1266.8M **
+Tdgp not successfully inited but do clear! skip clearing
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPDC-1629           2  The default delay limit was set to %d. T...
+WARNING   IMPSP-9532           1  Skipping assigning placement activity po...
+WARNING   IMPSP-9025           1  No scan chain specified/traced.          
+WARNING   IMPSP-9042           1  Scan chains were not defined, -place_glo...
+*** Message Summary: 5 warning(s), 0 error(s)
+
+<CMD> setPlaceMode -fp false
+<CMD> place_design
+*** Starting placeDesign default flow ***
+*** Start deleteBufferTree ***
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+Updating netlist
+
+*summary: 0 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:00.1) ***
+**INFO: Enable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 101.
+**WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF. 
+**INFO: Analyzing IO path groups for slack adjustment
+**INFO: Disable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+**INFO: Pre-place timing setting for timing analysis already disabled
+Deleted 0 physical inst  (cell - / prefix -).
+INFO: #ExclusiveGroups=0
+INFO: There are no Exclusive Groups.
+*** Starting "NanoPlace(TM) placement v#9 (mem=1276.4M)" ...
+*** Build Buffered Sizing Timing Model
+(cpu=0:00:01.8 mem=1276.4M) ***
+*** Build Virtual Sizing Timing Model
+(cpu=0:00:02.0 mem=1276.4M) ***
+No user-set net weight.
+Net fanout histogram:
+2		: 184 (85.6%) nets
+3		: 6 (2.8%) nets
+4     -	14	: 25 (11.6%) nets
+15    -	39	: 0 (0.0%) nets
+40    -	79	: 0 (0.0%) nets
+80    -	159	: 0 (0.0%) nets
+160   -	319	: 0 (0.0%) nets
+320   -	639	: 0 (0.0%) nets
+640   -	1279	: 0 (0.0%) nets
+1280  -	2559	: 0 (0.0%) nets
+2560  -	5119	: 0 (0.0%) nets
+5120+		: 0 (0.0%) nets
+Options: timingDriven powerDriven clkGateAware ignoreScan pinGuide congEffort=auto gpeffort=medium 
+**WARN: (IMPSP-9042):	Scan chains were not defined, -place_global_ignore_scan option will be ignored.
+Define the scan chains before using this option.
+Type 'man IMPSP-9042' for more detail.
+#std cell=140 (0 fixed + 140 movable) #buf cell=0 #inv cell=1 #block=0 (0 floating + 0 preplaced)
+#ioInst=0 #net=215 #term=568 #term/net=2.64, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=32
+stdCell: 140 single + 0 double + 0 multi
+Total standard cell length = 0.9748 (mm), area = 0.0049 (mm^2)
+Average module density = 0.624.
+Density for the design = 0.624.
+       = stdcell_area 1477 sites (4913 um^2) / alloc_area 2367 sites (7872 um^2).
+Pin Density = 0.2304.
+            = total # of pins 568 / total area 2465.
+=== lastAutoLevel = 5 
+**WARN: (IMPSP-9532):	Skipping assigning placement activity power weights when activity file was not read
+Clock gating cells determined by native netlist tracing.
+Iteration  1: Total net bbox = 3.325e-12 (1.14e-12 2.19e-12)
+              Est.  stn bbox = 3.428e-12 (1.14e-12 2.29e-12)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1294.1M
+Iteration  2: Total net bbox = 3.325e-12 (1.14e-12 2.19e-12)
+              Est.  stn bbox = 3.428e-12 (1.14e-12 2.29e-12)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1294.1M
+Iteration  3: Total net bbox = 1.184e+00 (7.26e-01 4.58e-01)
+              Est.  stn bbox = 1.270e+00 (7.78e-01 4.92e-01)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1295.5M
+Active setup views:
+    func_fast_RMIN
+Iteration  4: Total net bbox = 2.774e+03 (1.17e+03 1.60e+03)
+              Est.  stn bbox = 3.085e+03 (1.32e+03 1.76e+03)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 1295.5M
+Active setup views:
+    func_fast_RMIN
+Iteration  5: Total net bbox = 3.351e+03 (1.44e+03 1.91e+03)
+              Est.  stn bbox = 3.706e+03 (1.62e+03 2.08e+03)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 1295.5M
+Iteration  6: Total net bbox = 6.473e+03 (3.35e+03 3.12e+03)
+              Est.  stn bbox = 7.207e+03 (3.71e+03 3.50e+03)
+              cpu = 0:00:00.2 real = 0:00:00.0 mem = 1295.5M
+*** cost = 6.473e+03 (3.35e+03 3.12e+03) (cpu for global=0:00:00.2) real=0:00:00.0***
+Info: 0 clock gating cells identified, 0 (on average) moved 0/1
+Solver runtime cpu: 0:00:00.1 real: 0:00:00.1
+Core Placement runtime cpu: 0:00:00.2 real: 0:00:00.0
+**WARN: (IMPSP-9025):	No scan chain specified/traced.
+Type 'man IMPSP-9025' for more detail.
+*** Starting refinePlace (0:02:33 mem=1295.5M) ***
+Total net bbox length = 6.473e+03 (3.354e+03 3.119e+03) (ext = 2.586e+03)
+Move report: Detail placement moves 140 insts, mean move: 5.38 um, max move: 16.77 um 
+	Max move on inst (a1/g361__5526): (35.13, 52.02) --> (21.78, 55.44)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 1295.5MB
+Summary Report:
+Instances move: 140 (out of 140 movable)
+Instances flipped: 0
+Mean displacement: 5.38 um
+Max displacement: 16.77 um (Instance: a1/g361__5526) (35.1265, 52.0195) -> (21.78, 55.44)
+	Length: 4 sites, height: 1 rows, site name: tsm3site, cell type: AND2X1
+Total net bbox length = 6.282e+03 (2.815e+03 3.467e+03) (ext = 2.384e+03)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 1295.5MB
+*** Finished refinePlace (0:02:33 mem=1295.5M) ***
+*** End of Placement (cpu=0:00:02.4, real=0:00:02.0, mem=1295.5M) ***
+default core: bins with density > 0.750 =  0.00 % ( 0 / 4 )
+Density distribution unevenness ratio = 1.838%
+*** Free Virtual Timing Model ...(mem=1295.5M)
+**INFO: Enable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 101.
+**WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF. 
+**INFO: Analyzing IO path groups for slack adjustment
+**INFO: Disable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Info: Disable timing driven in postCTS congRepair.
+
+Starting congRepair ...
+[NR-eGR] Track table information for default rule: 
+[NR-eGR] Metal1 has no routable track
+[NR-eGR] Metal2 has single uniform track structure
+[NR-eGR] Metal3 has single uniform track structure
+[NR-eGR] Metal4 has single uniform track structure
+[NR-eGR] Metal5 has single uniform track structure
+[NR-eGR] Metal6 has single uniform track structure
+[NR-eGR] Read 348 PG shapes
+[NR-eGR] #Routing Blockages  : 0
+[NR-eGR] #Instance Blockages : 0
+[NR-eGR] #PG Blockages       : 348
+[NR-eGR] #Halo Blockages     : 0
+[NR-eGR] #Boundary Blockages : 0
+[NR-eGR] Num Prerouted Nets = 0  Num Prerouted Wires = 0
+[NR-eGR] Read numTotalNets=199  numIgnoredNets=0
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id: 0  Nets: 199 
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] Layer group 1: route 199 net(s) in layer range [2, 6]
+[NR-eGR] Early Global Route overflow of layer group 1: 0.00% H + 0.00% V. EstWL: 4.163040e+03um
+[NR-eGR] Congestion Analysis By layer: (blocked Gcells are excluded) 
+[NR-eGR]                        OverCon            
+[NR-eGR]                         #Gcell     %Gcell
+[NR-eGR]       Layer                (0)    OverCon 
+[NR-eGR] ----------------------------------------------
+[NR-eGR]  Metal1  (1)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal2  (2)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal3  (3)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal4  (4)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal5  (5)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal6  (6)         0( 0.00%)   ( 0.00%) 
+[NR-eGR] ----------------------------------------------
+[NR-eGR] Total                0( 0.00%)   ( 0.00%) 
+[NR-eGR] 
+[NR-eGR] Overflow after Early Global Route (GR compatible) 0.00% H + 0.00% V
+[NR-eGR] Overflow after Early Global Route 0.00% H + 0.00% V
+Early Global Route congestion estimation runtime: 0.01 seconds, mem = 1286.6M
+Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+Skipped repairing congestion.
+[NR-eGR] Started Export DB wires ( Curr Mem: 1286.60 MB )
+[NR-eGR] Started Export all nets ( Curr Mem: 1286.60 MB )
+[NR-eGR] Finished Export all nets ( CPU: 0.00 sec, Real: 0.00 sec, Curr Mem: 1286.60 MB )
+[NR-eGR] Started Set wire vias ( Curr Mem: 1286.60 MB )
+[NR-eGR] Finished Set wire vias ( CPU: 0.00 sec, Real: 0.00 sec, Curr Mem: 1286.60 MB )
+[NR-eGR] Finished Export DB wires ( CPU: 0.00 sec, Real: 0.00 sec, Curr Mem: 1286.60 MB )
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Metal1  (1F) length: 0.000000e+00um, number of vias: 520
+[NR-eGR] Metal2  (2V) length: 2.390080e+03um, number of vias: 705
+[NR-eGR] Metal3  (3H) length: 1.861860e+03um, number of vias: 14
+[NR-eGR] Metal4  (4V) length: 1.316000e+02um, number of vias: 0
+[NR-eGR] Metal5  (5H) length: 0.000000e+00um, number of vias: 0
+[NR-eGR] Metal6  (6V) length: 0.000000e+00um, number of vias: 0
+[NR-eGR] Total length: 4.383540e+03um, number of vias: 1239
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total eGR-routed clock nets wire length: 0.000000e+00um 
+[NR-eGR] --------------------------------------------------------------------------
+Early Global Route wiring runtime: 0.00 seconds, mem = 1286.6M
+Tdgp not successfully inited but do clear! skip clearing
+End of congRepair (cpu=0:00:00.0, real=0:00:00.0)
+*** Finishing placeDesign default flow ***
+**placeDesign ... cpu = 0: 0: 3, real = 0: 0: 2, mem = 1271.6M **
+Tdgp not successfully inited but do clear! skip clearing
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPDC-1629           2  The default delay limit was set to %d. T...
+WARNING   IMPSP-9532           1  Skipping assigning placement activity po...
+WARNING   IMPSP-9025           1  No scan chain specified/traced.          
+WARNING   IMPSP-9042           1  Scan chains were not defined, -place_glo...
+*** Message Summary: 5 warning(s), 0 error(s)
+
+<CMD> getFillerMode -quiet
+<CMD> addFiller -cell FILL1 FILL16 FILL2 FILL32 FILL4 FILL64 FILL8 -prefix FILLER
+*INFO: Adding fillers to top-module.
+*INFO:   Added 0 filler inst  (cell FILL64 / prefix FILLER).
+*INFO:   Added 6 filler insts (cell FILL32 / prefix FILLER).
+*INFO:   Added 14 filler insts (cell FILL16 / prefix FILLER).
+*INFO:   Added 40 filler insts (cell FILL8 / prefix FILLER).
+*INFO:   Added 34 filler insts (cell FILL4 / prefix FILLER).
+*INFO:   Added 41 filler insts (cell FILL2 / prefix FILLER).
+*INFO:   Added 34 filler insts (cell FILL1 / prefix FILLER).
+*INFO: Swapped 0 special filler inst. 
+*INFO: Total 169 filler insts added - prefix FILLER (CPU: 0:00:00.0).
+For 169 new insts, **ERROR: (IMPDB-1220):	A global net connection(GNC) rule for connecting pin 'VDD' of cell 'FILL2' to global net 'VSS' was specified.  The connection cannot be made because the power pin and the ground net are not of the same polarity.  Check the imported design and make sure the GNC rule is correctly specified or generated. If the polarity mismatch is required, use the 'init_ignore_pgpin_polarity_check' variable to ignore the polarity check.
+Type 'man IMPDB-1220' for more detail.
+**ERROR: (IMPDB-1220):	A global net connection(GNC) rule for connecting pin 'VDD' of cell 'FILL4' to global net 'VSS' was specified.  The connection cannot be made because the power pin and the ground net are not of the same polarity.  Check the imported design and make sure the GNC rule is correctly specified or generated. If the polarity mismatch is required, use the 'init_ignore_pgpin_polarity_check' variable to ignore the polarity check.
+Type 'man IMPDB-1220' for more detail.
+**ERROR: (IMPDB-1220):	A global net connection(GNC) rule for connecting pin 'VDD' of cell 'FILL16' to global net 'VSS' was specified.  The connection cannot be made because the power pin and the ground net are not of the same polarity.  Check the imported design and make sure the GNC rule is correctly specified or generated. If the polarity mismatch is required, use the 'init_ignore_pgpin_polarity_check' variable to ignore the polarity check.
+Type 'man IMPDB-1220' for more detail.
+**ERROR: (IMPDB-1220):	A global net connection(GNC) rule for connecting pin 'VDD' of cell 'FILL32' to global net 'VSS' was specified.  The connection cannot be made because the power pin and the ground net are not of the same polarity.  Check the imported design and make sure the GNC rule is correctly specified or generated. If the polarity mismatch is required, use the 'init_ignore_pgpin_polarity_check' variable to ignore the polarity check.
+Type 'man IMPDB-1220' for more detail.
+**ERROR: (IMPDB-1220):	A global net connection(GNC) rule for connecting pin 'VDD' of cell 'FILL8' to global net 'VSS' was specified.  The connection cannot be made because the power pin and the ground net are not of the same polarity.  Check the imported design and make sure the GNC rule is correctly specified or generated. If the polarity mismatch is required, use the 'init_ignore_pgpin_polarity_check' variable to ignore the polarity check.
+Type 'man IMPDB-1220' for more detail.
+**ERROR: (IMPDB-1220):	A global net connection(GNC) rule for connecting pin 'VDD' of cell 'FILL1' to global net 'VSS' was specified.  The connection cannot be made because the power pin and the ground net are not of the same polarity.  Check the imported design and make sure the GNC rule is correctly specified or generated. If the polarity mismatch is required, use the 'init_ignore_pgpin_polarity_check' variable to ignore the polarity check.
+Type 'man IMPDB-1220' for more detail.
+*** Applied 1 GNC rules (cpu = 0:00:00.0)
+<CMD> addFiller -cell FILL1 FILL16 FILL2 FILL32 FILL4 FILL64 FILL8 -prefix FILLER
+*INFO: Adding fillers to top-module.
+*INFO:   Added 0 filler inst of any cell-type.
+*INFO: Swapped 0 special filler inst. 
+<CMD> fit
+<CMD> zoomBox -56.54800 -12.35200 166.48950 111.57250
+<CMD> zoomBox -41.66100 -4.78800 147.92100 100.54800
+<CMD> zoomBox -28.37450 1.89750 132.77050 91.43350
+<CMD> zoomBox -7.13200 12.49200 109.29600 77.18200
+<CMD> zoomBox 14.21000 23.13550 85.71150 62.86350
+<CMD> zoomBox 19.30400 25.67650 80.08100 59.44550
+<CMD> zoomBox 35.36500 33.68650 62.33300 48.67050
+<CMD> zoomBox 37.28650 34.64500 60.20950 47.38150
+<CMD> zoomBox 42.64900 36.31800 54.61600 42.96700
+<CMD> zoomBox 45.91450 37.33400 51.22550 40.28500
+<CMD> zoomBox 47.54100 37.84000 49.54500 38.95350
+<CMD> zoomBox 48.08950 38.01100 48.97900 38.50500
+<CMD> zoomBox 48.31600 38.21600 48.60200 38.37500
+<CMD> zoomBox 48.38150 38.27600 48.49150 38.33700
+<CMD> zoomBox 48.40500 38.29550 48.45350 38.32250
+<CMD> zoomBox 48.38400 38.28350 48.47750 38.33550
+<CMD> zoomBox 48.34400 38.26050 48.52400 38.36050
+<CMD> zoomBox 48.20750 38.18150 48.68750 38.44800
+<CMD> zoomBox 48.01200 38.07150 48.93150 38.58250
+<CMD> gui_select -rect {48.39650 38.32150 48.50600 38.22650}
+<CMD> zoomBox 47.41900 37.75450 49.49150 38.90600
+<CMD> zoomBox 46.44400 37.23150 50.41550 39.43800
+<CMD> zoomBox 43.88550 35.85950 52.83850 40.83400
+<CMD> zoomBox 39.67800 33.61050 56.83000 43.14050
+<CMD> zoomBox 31.63000 29.35800 64.48950 47.61550
+<CMD> selectWire 41.1100 38.2200 53.9300 38.5000 3 {a1/c[0]}
+<CMD> deselectAll
+<CMD> selectInst a1/r25/g72__7410
+<CMD> zoomBox 28.58950 28.07500 67.24750 49.55400
+<CMD> deselectAll
+<CMD> selectWire 5.2800 34.8800 100.9800 35.6800 1 VDD
+<CMD> zoomBox 39.91800 32.07000 57.07100 41.60050
+<CMD> gui_select -rect {49.08750 35.91700 49.12900 36.06150}
+<CMD> deselectAll
+<CMD> selectInst a1/r25/g72__7410
+<CMD> zoomBox 38.01200 31.32550 58.19200 42.53800
+<CMD> zoomBox 35.76950 30.44950 59.51150 43.64100
+<CMD> zoomBox 33.13150 29.41900 61.06350 44.93850
+<CMD> zoomBox 30.02800 28.20650 62.88950 46.46500
+<CMD> zoomBox 11.08250 20.80600 74.03550 55.78400
+<CMD> zoomBox 4.08800 18.07350 78.15050 59.22450
+<CMD> zoomBox -4.14100 14.85900 82.99200 63.27200
+<CMD> zoomBox -13.82200 11.07750 88.68750 68.03400
+<CMD> zoomBox -25.21100 6.62800 95.38850 73.63600
+<CMD> zoomBox -38.61050 1.39350 103.27200 80.22650
+<CMD> zoomBox -54.37450 -4.76450 112.54650 87.98050
+<CMD> zoomBox -92.42550 -18.14200 138.60750 110.22500
+<CMD> zoomBox -116.62300 -26.64900 155.18050 124.37100
+<CMD> streamOut DADDA_GDS -libName DesignLib -units 2000 -mode ALL
+Parse flat map file...
+Writing GDSII file ...
+	****** db unit per micron = 2000 ******
+	****** output gds2 file unit per micron = 2000 ******
+	****** unit scaling factor = 1 ******
+Output for instance
+Output for bump
+Output for physical terminals
+Output for logical terminals
+Output for regular nets
+Output for special nets and metal fills
+Output for via structure generation total number 9
+Statistics for GDS generated (version 3)
+----------------------------------------
+Stream Out Layer Mapping Information:
+GDS Layer Number          GDS Layer Name
+----------------------------------------
+    121                             COMP
+    122                          DIEAREA
+    58                             Via34
+    57                             Via34
+    50                            Metal3
+    107                           Metal6
+    46                            Metal3
+    45                            Metal3
+    44                            Metal3
+    63                             Via34
+    43                            Metal3
+    62                             Via34
+    41                             Via23
+    22                            Metal2
+    40                             Via23
+    37                             Via23
+    36                             Via23
+    31                            Metal2
+    88                            Metal5
+    29                            Metal2
+    86                            Metal5
+    105                            Via56
+    9                             Metal1
+    66                            Metal4
+    42                             Via23
+    23                            Metal2
+    99                             Via56
+    19                             Via12
+    8                             Metal1
+    65                            Metal4
+    84                             Via45
+    30                            Metal2
+    87                            Metal5
+    7                             Metal1
+    6                             Metal1
+    64                            Metal4
+    83                             Via45
+    39                             Via23
+    16                             Via12
+    5                             Metal1
+    81                             Via45
+    38                             Via23
+    15                             Via12
+    10                            Metal1
+    67                            Metal4
+    51                            Metal3
+    108                           Metal6
+    28                            Metal2
+    1                             Metal1
+    20                             Via12
+    52                            Metal3
+    109                           Metal6
+    2                             Metal1
+    21                             Via12
+    78                             Via45
+    27                            Metal2
+    85                            Metal5
+    104                            Via56
+    4                             Metal1
+    17                             Via12
+    49                            Metal3
+    18                             Via12
+    47                            Metal3
+    24                            Metal2
+    100                            Via56
+    48                            Metal3
+    106                           Metal6
+    25                            Metal2
+    3                             Metal1
+    79                             Via45
+    26                            Metal2
+    102                            Via56
+    59                             Via34
+    60                             Via34
+    61                             Via34
+    68                            Metal4
+    69                            Metal4
+    70                            Metal4
+    71                            Metal4
+    72                            Metal4
+    73                            Metal4
+    80                             Via45
+    82                             Via45
+    89                            Metal5
+    90                            Metal5
+    91                            Metal5
+    92                            Metal5
+    93                            Metal5
+    94                            Metal5
+    101                            Via56
+    103                            Via56
+    111                           Metal6
+    112                           Metal6
+    113                           Metal6
+    114                           Metal6
+    115                           Metal6
+    110                           Metal6
+    117                           Metal6
+    56                            Metal3
+    55                            Metal3
+    54                            Metal3
+    53                            Metal3
+    32                            Metal2
+    98                            Metal5
+    96                            Metal5
+    76                            Metal4
+    33                            Metal2
+    75                            Metal4
+    97                            Metal5
+    74                            Metal4
+    77                            Metal4
+    118                           Metal6
+    11                            Metal1
+    119                           Metal6
+    12                            Metal1
+    95                            Metal5
+    14                            Metal1
+    34                            Metal2
+    116                           Metal6
+    35                            Metal2
+    13                            Metal1
+
+
+Stream Out Information Processed for GDS version 3:
+Units: 2000 DBU
+
+Object                             Count
+----------------------------------------
+Instances                            309
+
+Ports/Pins                             0
+
+Nets                                 741
+    metal layer Metal2               354
+    metal layer Metal3               379
+    metal layer Metal4                 8
+
+    Via Instances                   1239
+
+Special Nets                          62
+    metal layer Metal1                54
+    metal layer Metal5                 4
+    metal layer Metal6                 4
+
+    Via Instances                    188
+
+Metal Fills                            0
+
+    Via Instances                      0
+
+Metal FillOPCs                         0
+
+    Via Instances                      0
+
+Metal FillDRCs                         0
+
+    Via Instances                      0
+
+Text                                 233
+    metal layer Metal1                32
+    metal layer Metal2               131
+    metal layer Metal3                66
+    metal layer Metal4                 2
+    metal layer Metal6                 2
+
+
+Blockages                              0
+
+
+Custom Text                            0
+
+
+Custom Box                             0
+
+Trim Metal                             0
+
+######Streamout is finished!
+<CMD> streamOut DADDA_GDS -libName DesignLib -units 2000 -mode ALL
+Parse flat map file...
+Writing GDSII file ...
+	****** db unit per micron = 2000 ******
+	****** output gds2 file unit per micron = 2000 ******
+	****** unit scaling factor = 1 ******
+Output for instance
+Output for bump
+Output for physical terminals
+Output for logical terminals
+Output for regular nets
+Output for special nets and metal fills
+Output for via structure generation total number 9
+Statistics for GDS generated (version 3)
+----------------------------------------
+Stream Out Layer Mapping Information:
+GDS Layer Number          GDS Layer Name
+----------------------------------------
+    121                             COMP
+    122                          DIEAREA
+    58                             Via34
+    57                             Via34
+    50                            Metal3
+    107                           Metal6
+    46                            Metal3
+    45                            Metal3
+    44                            Metal3
+    63                             Via34
+    43                            Metal3
+    62                             Via34
+    41                             Via23
+    22                            Metal2
+    40                             Via23
+    37                             Via23
+    36                             Via23
+    31                            Metal2
+    88                            Metal5
+    29                            Metal2
+    86                            Metal5
+    105                            Via56
+    9                             Metal1
+    66                            Metal4
+    42                             Via23
+    23                            Metal2
+    99                             Via56
+    19                             Via12
+    8                             Metal1
+    65                            Metal4
+    84                             Via45
+    30                            Metal2
+    87                            Metal5
+    7                             Metal1
+    6                             Metal1
+    64                            Metal4
+    83                             Via45
+    39                             Via23
+    16                             Via12
+    5                             Metal1
+    81                             Via45
+    38                             Via23
+    15                             Via12
+    10                            Metal1
+    67                            Metal4
+    51                            Metal3
+    108                           Metal6
+    28                            Metal2
+    1                             Metal1
+    20                             Via12
+    52                            Metal3
+    109                           Metal6
+    2                             Metal1
+    21                             Via12
+    78                             Via45
+    27                            Metal2
+    85                            Metal5
+    104                            Via56
+    4                             Metal1
+    17                             Via12
+    49                            Metal3
+    18                             Via12
+    47                            Metal3
+    24                            Metal2
+    100                            Via56
+    48                            Metal3
+    106                           Metal6
+    25                            Metal2
+    3                             Metal1
+    79                             Via45
+    26                            Metal2
+    102                            Via56
+    59                             Via34
+    60                             Via34
+    61                             Via34
+    68                            Metal4
+    69                            Metal4
+    70                            Metal4
+    71                            Metal4
+    72                            Metal4
+    73                            Metal4
+    80                             Via45
+    82                             Via45
+    89                            Metal5
+    90                            Metal5
+    91                            Metal5
+    92                            Metal5
+    93                            Metal5
+    94                            Metal5
+    101                            Via56
+    103                            Via56
+    111                           Metal6
+    112                           Metal6
+    113                           Metal6
+    114                           Metal6
+    115                           Metal6
+    110                           Metal6
+    117                           Metal6
+    56                            Metal3
+    55                            Metal3
+    54                            Metal3
+    53                            Metal3
+    32                            Metal2
+    98                            Metal5
+    96                            Metal5
+    76                            Metal4
+    33                            Metal2
+    75                            Metal4
+    97                            Metal5
+    74                            Metal4
+    77                            Metal4
+    118                           Metal6
+    11                            Metal1
+    119                           Metal6
+    12                            Metal1
+    95                            Metal5
+    14                            Metal1
+    34                            Metal2
+    116                           Metal6
+    35                            Metal2
+    13                            Metal1
+
+
+Stream Out Information Processed for GDS version 3:
+Units: 2000 DBU
+
+Object                             Count
+----------------------------------------
+Instances                            309
+
+Ports/Pins                             0
+
+Nets                                 741
+    metal layer Metal2               354
+    metal layer Metal3               379
+    metal layer Metal4                 8
+
+    Via Instances                   1239
+
+Special Nets                          62
+    metal layer Metal1                54
+    metal layer Metal5                 4
+    metal layer Metal6                 4
+
+    Via Instances                    188
+
+Metal Fills                            0
+
+    Via Instances                      0
+
+Metal FillOPCs                         0
+
+    Via Instances                      0
+
+Metal FillDRCs                         0
+
+    Via Instances                      0
+
+Text                                 233
+    metal layer Metal1                32
+    metal layer Metal2               131
+    metal layer Metal3                66
+    metal layer Metal4                 2
+    metal layer Metal6                 2
+
+
+Blockages                              0
+
+
+Custom Text                            0
+
+
+Custom Box                             0
+
+Trim Metal                             0
+
+######Streamout is finished!
+<CMD> checkPlace
+Begin checking placement ... (start mem=1336.0M, init mem=1336.0M)
+*info: Placed = 309           
+*info: Unplaced = 0           
+Placement Density:100.00%(8200/8200)
+Placement Density (including fixed std cells):100.00%(8200/8200)
+Finished checkPlace (total: cpu=0:00:00.0, real=0:00:00.0; vio checks: cpu=0:00:00.0, real=0:00:00.0; mem=1336.0M)

@@ -1,0 +1,18 @@
+#set_units -time ns -resistance Mohm -capacitance fF -voltage mV -current uA
+set_load -pin_load 0.5 [get_port p[0]]
+set_load -pin_load 0.5 [get_port p[1]]
+set_load -pin_load 0.5 [get_port p[2]]
+set_load -pin_load 0.5 [get_port p[3]]
+set_load -pin_load 0.5 [get_port p[4]]
+set_load -pin_load 0.5 [get_port p[5]]
+set_load -pin_load 0.5 [get_port p[6]]
+set_load -pin_load 0.5 [get_port p[7]]
+
+set_load -pin_load 0.5 [get_port p[8]]
+set_load -pin_load 0.5 [get_port p[9]]
+set_load -pin_load 0.5 [get_port p[10]]
+set_load -pin_load 0.5 [get_port p[11]]
+set_load -pin_load 0.5 [get_port p[12]]
+set_load -pin_load 0.5 [get_port p[13]]
+set_load -pin_load 0.5 [get_port p[14]]
+set_load -pin_load 0.5 [get_port p[15]]
