@@ -13,7 +13,7 @@ This project implements a high-speed **Dadda Multiplier** using Verilog HDL. It 
 - Verilog HDL
 
 ## 📈 Output
-![Waveform](waves.shm/CMOS-implementation-of-a-NAND-gate.png)
+![Waveform](waves.shm/)
 
 ## 👨‍💻 Developer
 **Rohith Kumar**  
