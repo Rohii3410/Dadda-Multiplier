@@ -16,6 +16,6 @@ This project implements a high-speed **Dadda Multiplier** using Verilog HDL. It 
 ![Waveform](waves.shm/DADDA methoud.jpg)
 
 ## 👨‍💻 Developer
-**Rohith Kumar (Raji)**  
+**Rohith Kumar**  
 B.Tech – ECE  
 Bonam Venkata Chalamayya Engineering College  
